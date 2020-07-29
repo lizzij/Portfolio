@@ -63,6 +63,29 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `yarn build` fails to minify
+```bash
+yarn build
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```bash
+scp -r ./build/* eliza@167.179.68.53:/var/www/lizzij.me/html
+```
+
+## Git
+
+- feature to master
+
+```bash
+    git checkout master
+    git pull origin master
+    git merge test
+    git push origin master
+```
+
+- dev to deployment
+
+```bash
+git checkout dev      # gets you "on branch dev"
+git fetch origin        # gets you up to date with origin
+git merge origin/master
+```
