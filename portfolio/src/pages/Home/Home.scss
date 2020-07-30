@@ -29,7 +29,7 @@
 
 #inactive {
   -webkit-text-stroke: 1px $dark-color;
-  -webkit-text-fill-color: $background-color;
+  -webkit-text-fill-color: $off-white;
 }
 
 .Header {
@@ -44,7 +44,11 @@
   stroke-width: 1px;
   stroke-linecap: round;
   stroke-linejoin: round;
-  fill: $background-color;
+  fill: $off-white;
+}
+
+.Video {
+  margin: 0;
 }
 
 .VideoPlayer {
@@ -65,4 +69,87 @@
 
 #temp-scroll-test {
   height: 100vh;
+}
+
+.Content {
+  position: absolute;
+  padding: 4rem 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: calc(100vw - 8rem);
+  
+}
+
+.Tags {
+  margin-bottom: calc(min(54px, 3vw));
+  text-align: center;
+}
+
+.Pill {
+  max-height: 64px;
+  padding: calc(min(12px, 0.8vw));
+  margin-right: calc(min(36px, 1.5vw));
+  margin-bottom: calc(min(36px, 1.5vw));
+
+  border: 3px solid $dark-color;
+  box-sizing: border-box;
+  border-radius: 48px;
+
+  .Label {
+    color: $dark-color;
+    font-size: calc(min(32px, 3vw));
+    line-height: calc(min(32px, 6vw));
+    padding-left: calc(min(20px, 3vw));
+    padding-right: calc(min(20px, 3vw));
+  }
+}
+
+.Pill:active {
+  background-color: $dark-color;
+  box-shadow: none;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.Pill:hover {
+  background-color: $brand-color;
+  .Label {
+    color: $dark-color;
+  }
+}
+
+.Pill:active:focus {
+  background-color: $dark-color;
+  outline-offset: none !important;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background-color: $dark-color !important;
+  border-color: $dark-color !important;
+  outline: none !important;
+}
+
+.btn:focus {
+  background-color: $dark-color !important;
+  border-color: $dark-color !important;
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline: none !important;
+}
+
+.row {
+  margin: 0;
 }

@@ -9,15 +9,15 @@ $font-main: 'Soulcraft';
 
 
 // colors ----------------------------------
-$background-color: #F4F4F4;
+$off-white: #F4F4F4;
 $dark-color: #222222;
 $light-color: white;
-$pink-color: #FFB7C9;
+$brand-color: #FFB7C9;
 
 // overall ----------------------------------
 @import "~bootstrap/scss/bootstrap";
 body {
-  background-color: $background-color;
+  background-color: $off-white;
   margin: 0 4rem 4rem;
 }
 

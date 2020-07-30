@@ -1,6 +1,6 @@
 import React from '../../../node_modules/react';
 import './Home.scss';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Container, Row, Button } from 'react-bootstrap';
 
 
 function Home() {
@@ -51,7 +51,40 @@ function Home() {
             allow="autoplay; encrypted-media" data-ready="true" title="Nebula"></iframe>
         </div>
       </figure>
-      <div id="temp-scroll-test"></div>
+    
+      <section className="Projects">
+        <Container fluid d-flex flex-column className="Content">
+          <Row className="Tags">
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">all</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">code</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">research</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">hackathon</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">web dev</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">blog</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">machine learning</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">mooc</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">random</div>
+            </Button>
+          </Row>
+        </Container>
+      </section>
     </div>
   );
 }
