@@ -48,6 +48,7 @@ $nav-link-font-size: calc(min(20px, 3vw));
 
 .navbar-brand {
   font-size: $nav-link-font-size;
+  color: $dark-color !important;
 }
 
 .nav-link {
@@ -57,6 +58,7 @@ $nav-link-font-size: calc(min(20px, 3vw));
 }
 
 .active {
+  color: $dark-color;
   -webkit-text-fill-color: $dark-color;
 }
 

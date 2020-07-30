@@ -21,8 +21,12 @@ $default-large-margin: calc(min(16rem, 32vw));
 
 // overall ----------------------------------
 @import "~bootstrap/scss/bootstrap";
+
+html {
+  overflow: scroll;
+}
+
 body {
   background-color: $off-white;
   margin: 0 $default-margin $default-margin;
 }
-
