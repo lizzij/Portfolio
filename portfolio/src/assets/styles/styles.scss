@@ -1,0 +1,22 @@
+// fonts ----------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@font-face {
+  font-family: 'Soulcraft';
+  src: url('../fonts/Soulcraft.ttf') format('truetype');
+}
+$font-text: 'Montserrat', sans-serif;
+$font-main: 'Soulcraft';
+
+
+// colors ----------------------------------
+$background-color: #F4F4F4;
+$dark-color: #222222;
+$light-color: white;
+$pink-color: #FFB7C9;
+
+// overall ----------------------------------
+@import "~bootstrap/scss/bootstrap";
+body {
+  background-color: $background-color;
+  margin: 0 4rem 4rem;
+}

@@ -1,0 +1,66 @@
+@import "./../../assets/styles/styles.scss";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  color: $dark-color;
+  font-family: $font-main;
+}
+
+.Navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  z-index: 10;
+  color: $dark-color;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-left: 2rem;
+  padding-right: 0;
+}
+
+#active {
+  -webkit-text-fill-color: $dark-color;
+}
+
+#inactive {
+  -webkit-text-stroke: 1px $dark-color;
+  -webkit-text-fill-color: $background-color;
+}
+
+.Header {
+  margin-top: 12rem;
+  z-index: 1;
+}
+
+#name-slash {
+  paint-order: stroke;
+  stroke: $dark-color;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: $background-color;
+}
+
+.VideoPlayer {
+  position: relative;
+  height: calc((100vw - 8rem) / 16 * 9);
+}
+
+#video-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  width: calc(100vw - 8rem);
+  z-index: 0;
+}
+
+#temp-scroll-test {
+  height: 100vh;
+}
