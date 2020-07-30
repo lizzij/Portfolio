@@ -67,6 +67,10 @@ $nav-link-font-size: calc(min(20px, 3vw));
   z-index: 1;
 }
 
+#name-eliza, #name-zijin, #name-huang {
+  fill: $dark-color;
+}
+
 #name-slash {
   paint-order: stroke;
   stroke: $dark-color;
@@ -103,8 +107,8 @@ $label-line-height: calc(min(40px, 3.3vw));
 $label-horizontal-gap: calc(min(20px, 1vw));
 
 .Content {
-  position: absolute;
-  padding: $default-margin 0 $default-margin;
+  padding-bottom: calc(#{$default-margin} - #{$tag-vertical-gap});
+  padding-top: $default-margin;
   display: flex;
   flex-direction: column;
   align-items: initial;
@@ -183,4 +187,61 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 
 .row {
   margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ComingSoon {
+  padding-top: calc(#{$default-large-margin} - #{$default-margin});
+  text-rendering: geometricPrecision;
+  text-align: center;
+}
+  
+@keyframes wacky  {
+  0%   {font-variation-settings: "wght" 100, "wdth" 50 ; }
+  25%   {font-variation-settings: "wght" 100, "wdth" 200; }
+  50%   {font-variation-settings: "wght" 900, "wdth" 200; }
+  75%   {font-variation-settings: "wght" 900, "wdth" 50;  }
+  100% {font-variation-settings: "wght" 100, "wdth" 50 ;}
+}
+
+p {
+  animation:  wacky infinite;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  font-size: $label-font-size;
+  margin: 0 auto;
+  line-height: 1;
+  font-weight: normal;
+}
+
+p:nth-child(2) {
+  animation-delay: .1s
+}
+
+p:nth-child(3) {
+  animation-delay: .2s
+}
+
+p:nth-child(4) {
+  animation-delay: .3s
+}
+
+p:nth-child(5) {
+  animation-delay: .4s
+}
+
+p:nth-child(6) {
+  animation-delay: .5s
 }

@@ -4,6 +4,7 @@ import { Navbar, Nav, Container, Row, Button } from 'react-bootstrap';
 
 
 function Home() {
+
   return (
     <div className="Home">
       <Navbar expand="lg" className="fixed-top Navbar">
@@ -30,7 +31,7 @@ function Home() {
         <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="12" >
             ZIJIN
         </text>
-        <text classtextlength='75' lengthAdjust="spacing" x='129.6' y="12" >
+        <text id="name-huang" classtextlength='75' lengthAdjust="spacing" x='129.6' y="12" >
             HUANG
         </text>
       </svg>
@@ -51,7 +52,7 @@ function Home() {
             allow="autoplay; encrypted-media" data-ready="true" title="Nebula"></iframe>
         </div>
       </figure>
-    
+
       <section className="Projects">
         <Container fluid d-flex flex-column className="Content">
           <Row className="Tags">
@@ -88,6 +89,15 @@ function Home() {
           </Row>
         </Container>
       </section>
+
+      <div className="ComingSoon">
+        <p>I am working on it. More Content Coming Soon.</p>
+        <p>More Content Coming Soon. I am working on it.</p>
+        <p>I am working on it. More Content Coming Soon.</p>
+        <p>More Content Coming Soon. I am working on it.</p>
+        <p>I am working on it. More Content Coming Soon.</p>
+        <p>More Content Coming Soon. I am working on it.</p>
+      </div>
     </div>
   );
 }
