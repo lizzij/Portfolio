@@ -11,9 +11,9 @@ function Home() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="d-flex flex-row-reverse">
-            <Nav.Link className="ml-auto" id="inactive" href="/about">About</Nav.Link>
-            <Nav.Link className="ml-auto" id="inactive" href="/contact">Contact</Nav.Link>
-            <Nav.Link className="ml-auto" id="active" href="/">Projects</Nav.Link>
+            <Nav.Link className="sm-auto" href="/about">About</Nav.Link>
+            <Nav.Link className="sm-auto" href="/contact">Contact</Nav.Link>
+            <Nav.Link className="sm-auto active" href="/">Projects</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

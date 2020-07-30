@@ -12,12 +12,28 @@ $nav-link-font-size: calc(min(20px, 3vw));
 .Navbar {
   padding-left: 0;
   padding-right: 0;
-  padding-top: $default-margin / 2;
-  padding-bottom: $default-margin / 2;
+  padding-top: calc(#{$default-margin} / 2);
+  padding-bottom: calc(#{$default-margin} / 2);
   z-index: 10;
   color: $dark-color;
   padding-left: $default-margin;
   padding-right: $default-margin;
+}
+
+.navbar-toggler-icon {
+  height: $nav-link-font-size;
+  width: $nav-link-font-size;
+  background-image: url(./../../assets/imgs/menu-icon.png)!important;
+}
+
+.navbar-toggler:active {
+  transform: rotate(90deg);
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+  outline: none !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -36,15 +52,12 @@ $nav-link-font-size: calc(min(20px, 3vw));
 
 .nav-link {
   font-size: $nav-link-font-size;
-}
-
-#active {
-  -webkit-text-fill-color: $dark-color;
-}
-
-#inactive {
   -webkit-text-stroke: 1px $dark-color;
   -webkit-text-fill-color: $off-white;
+}
+
+.active {
+  -webkit-text-fill-color: $dark-color;
 }
 
 .Header {
