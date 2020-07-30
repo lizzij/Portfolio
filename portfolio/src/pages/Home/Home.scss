@@ -20,7 +20,12 @@ $nav-link-font-size: calc(min(20px, 3vw));
   padding-right: $default-margin;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: $default-margin;
+  padding-right: 0;
+}
+
+.navbar-collapse {
   padding-left: $default-margin;
   padding-right: 0;
 }
@@ -80,8 +85,8 @@ $nav-link-font-size: calc(min(20px, 3vw));
 
 $tag-horizontal-gap: calc(min(32px, 1vw));
 $tag-vertical-gap: calc(min(54px, 3vw));
-$label-font-size: calc(min(32px, 3vw));
-$label-line-height: calc(min(32px, 4vw));
+$label-font-size: calc(min(32px, 2.8vw));
+$label-line-height: calc(min(40px, 3.5vw));
 $label-horizontal-gap: calc(min(20px, 3vw));
 
 .Content {
