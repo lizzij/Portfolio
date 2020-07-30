@@ -7,20 +7,30 @@
   font-family: $font-main;
 }
 
+$nav-link-font-size: calc(min(20px, 3vw));
+
 .Navbar {
   padding-left: 0;
   padding-right: 0;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: $default-margin / 2;
+  padding-bottom: $default-margin / 2;
   z-index: 10;
   color: $dark-color;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: $default-margin;
+  padding-right: $default-margin;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link{
-  padding-left: 2rem;
+  padding-left: $default-margin;
   padding-right: 0;
+}
+
+.navbar-brand {
+  font-size: $nav-link-font-size;
+}
+
+.nav-link {
+  font-size: $nav-link-font-size;
 }
 
 #active {
@@ -33,8 +43,9 @@
 }
 
 .Header {
-  margin-top: 16rem;
-  margin-bottom: calc(4rem - 1px); // 1px for border stroke
+  position: relative;
+  margin-top: $default-large-margin;
+  margin-bottom: calc(#{$default-margin} - 1px); // 1px for border stroke
   z-index: 1;
 }
 
@@ -53,7 +64,7 @@
 
 .VideoPlayer {
   position: relative;
-  height: calc((100vw - 8rem) / 16 * 9);
+  height: calc((100vw - 2 * #{$default-margin}) / 16 * 9);
   overflow: hidden;
 }
 
@@ -63,45 +74,45 @@
   left: 50%;
   pointer-events: none;
   transform: translate(-50%,-50%);
-  width: calc(100vw - 8rem);
+  width: calc(100vw - 2 * #{$default-margin});
   z-index: 0;
 }
 
-#temp-scroll-test {
-  height: 100vh;
-}
+$tag-horizontal-gap: calc(min(32px, 1vw));
+$tag-vertical-gap: calc(min(54px, 3vw));
+$label-font-size: calc(min(32px, 3vw));
+$label-line-height: calc(min(32px, 4vw));
+$label-horizontal-gap: calc(min(20px, 3vw));
 
 .Content {
   position: absolute;
-  padding: 4rem 0 4rem;
+  padding: $default-margin 0 $default-margin;
   display: flex;
   flex-direction: column;
   align-items: initial;
-  width: calc(100vw - 8rem);
-  
+  width: calc(100vw - 2 * #{$default-margin} + #{$tag-horizontal-gap});
 }
 
 .Tags {
-  margin-bottom: calc(min(54px, 3vw));
+  margin-bottom: $tag-vertical-gap;
   text-align: center;
 }
 
 .Pill {
   max-height: 64px;
   padding: calc(min(12px, 0.8vw));
-  margin-right: calc(min(36px, 1.5vw));
-  margin-bottom: calc(min(36px, 1.5vw));
-
-  border: 3px solid $dark-color;
+  margin-right: $tag-horizontal-gap;
+  margin-bottom: $tag-horizontal-gap;
+  border: calc(0.1 * #{$label-font-size}) solid $dark-color;
   box-sizing: border-box;
   border-radius: 48px;
 
   .Label {
     color: $dark-color;
-    font-size: calc(min(32px, 3vw));
-    line-height: calc(min(32px, 6vw));
-    padding-left: calc(min(20px, 3vw));
-    padding-right: calc(min(20px, 3vw));
+    font-size: $label-font-size;
+    line-height: $label-line-height;
+    padding-left: $label-horizontal-gap;
+    padding-right: $label-horizontal-gap;
   }
 }
 
@@ -121,8 +132,9 @@
 }
 
 .Pill:active:focus {
-  background-color: $dark-color;
+  background-color: $dark-color !important;
   outline-offset: none !important;
+  border-color: $dark-color !important;
   .Label {
     color: $light-color;
   }

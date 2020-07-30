@@ -14,12 +14,15 @@ $dark-color: #222222;
 $light-color: white;
 $brand-color: #FFB7C9;
 
+// metrics -----------------------------------
+$default-margin: calc(min(4rem, 4vw));
+$default-double-margin: calc(min(8rem, 8vw));
+$default-large-margin: calc(min(16rem, 32vw));
+
 // overall ----------------------------------
 @import "~bootstrap/scss/bootstrap";
 body {
   background-color: $off-white;
-  margin: 0 4rem 4rem;
+  margin: 0 $default-margin $default-margin;
 }
 
-// metrics -----------------------------------
-// $default-margin: min()

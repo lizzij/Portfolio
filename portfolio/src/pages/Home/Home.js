@@ -24,7 +24,7 @@ function Home() {
         <text id="name-eliza" classtextlength='57' lengthAdjust="spacing" x='0' y="12" >
             ELIZA
         </text>
-        <text id="name-slash" classtextlength='10' lengthAdjust="spacing" x='59' y="12" >
+        <text id="name-slash" classtextlength='10' lengthAdjust="spacing" x='58' y="12" >
             /
         </text>
         <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="12" >
@@ -56,31 +56,37 @@ function Home() {
         <Container fluid d-flex flex-column className="Content">
           <Row className="Tags">
             <Button variant="outline-dark" className="Pill">
+              <div className="Label">selected</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
               <div className="Label">all</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">code</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">research</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">hackathon</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
               <div className="Label">web dev</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">blog</div>
+              <div className="Label">ml</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">machine learning</div>
+              <div className="Label">hackathon</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
               <div className="Label">mooc</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">random</div>
+              <div className="Label">research</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">coop</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">blog</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">vlog</div>
+            </Button>
+            <Button variant="outline-dark" className="Pill">
+              <div className="Label">art</div>
             </Button>
           </Row>
         </Container>
