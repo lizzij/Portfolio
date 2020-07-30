@@ -71,22 +71,19 @@ function Home() {
               <div className="Label">hackathon</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">mooc</div>
+              <div className="Label">coop</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
               <div className="Label">research</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">coop</div>
+              <div className="Label">mooc</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
               <div className="Label">blog</div>
             </Button>
             <Button variant="outline-dark" className="Pill">
-              <div className="Label">vlog</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">art</div>
+              <div className="Label">etc</div>
             </Button>
           </Row>
         </Container>

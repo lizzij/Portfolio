@@ -86,8 +86,8 @@ $nav-link-font-size: calc(min(20px, 3vw));
 $tag-horizontal-gap: calc(min(32px, 1vw));
 $tag-vertical-gap: calc(min(54px, 3vw));
 $label-font-size: calc(min(32px, 2.8vw));
-$label-line-height: calc(min(40px, 3.5vw));
-$label-horizontal-gap: calc(min(20px, 3vw));
+$label-line-height: calc(min(40px, 3.3vw));
+$label-horizontal-gap: calc(min(20px, 1vw));
 
 .Content {
   position: absolute;
@@ -131,6 +131,7 @@ $label-horizontal-gap: calc(min(20px, 3vw));
 
 .Pill:hover {
   background-color: $brand-color;
+  border-color: $dark-color !important;
   .Label {
     color: $dark-color;
   }
