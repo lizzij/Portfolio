@@ -49,6 +49,7 @@
 .VideoPlayer {
   position: relative;
   height: calc((100vw - 8rem) / 16 * 9);
+  overflow: hidden;
 }
 
 #video-iframe {

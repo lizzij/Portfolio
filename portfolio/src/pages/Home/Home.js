@@ -20,17 +20,17 @@ function Home() {
 
       <svg className="Header"
         xmlns="http://www.w3.org/2000/svg" width="100%" height="10%" 
-        viewBox='0 0 200 20'>
-        <text id="name-eliza" classtextlength='57' lengthAdjust="spacing" x='0' y="16" >
+        viewBox='1 0 198 12'>
+        <text id="name-eliza" classtextlength='57' lengthAdjust="spacing" x='0' y="12" >
             ELIZA
         </text>
-        <text id="name-slash" classtextlength='10' lengthAdjust="spacing" x='59' y="16" >
+        <text id="name-slash" classtextlength='10' lengthAdjust="spacing" x='59' y="12" >
             /
         </text>
-        <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="16" >
+        <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="12" >
             ZIJIN
         </text>
-        <text classtextlength='70' lengthAdjust="spacing" x='130' y="16" >
+        <text classtextlength='75' lengthAdjust="spacing" x='130' y="12" >
             HUANG
         </text>
       </svg>
