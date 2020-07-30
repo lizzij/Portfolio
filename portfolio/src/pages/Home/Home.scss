@@ -109,6 +109,8 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 .Content {
   padding-bottom: calc(#{$default-margin} - #{$tag-vertical-gap});
   padding-top: $default-margin;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   flex-direction: column;
   align-items: initial;
