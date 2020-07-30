@@ -33,7 +33,8 @@
 }
 
 .Header {
-  margin-top: 12rem;
+  margin-top: 16rem;
+  margin-bottom: calc(4rem - 1px); // 1px for border stroke
   z-index: 1;
 }
 

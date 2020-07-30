@@ -20,7 +20,7 @@ function Home() {
 
       <svg className="Header"
         xmlns="http://www.w3.org/2000/svg" width="100%" height="10%" 
-        viewBox='1 0 198 12'>
+        viewBox='0.6 0 198.3 13'>
         <text id="name-eliza" classtextlength='57' lengthAdjust="spacing" x='0' y="12" >
             ELIZA
         </text>
@@ -30,7 +30,7 @@ function Home() {
         <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="12" >
             ZIJIN
         </text>
-        <text classtextlength='75' lengthAdjust="spacing" x='130' y="12" >
+        <text classtextlength='75' lengthAdjust="spacing" x='129.6' y="12" >
             HUANG
         </text>
       </svg>
