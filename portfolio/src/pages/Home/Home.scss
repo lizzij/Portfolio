@@ -58,7 +58,7 @@ $nav-link-font-size: calc(min(20px, 3vw));
 }
 
 .active {
-  color: $dark-color;
+  -webkit-text-stroke: 0px $dark-color;
   -webkit-text-fill-color: $dark-color;
 }
 

@@ -24,6 +24,7 @@ $default-large-margin: calc(min(16rem, 32vw));
 
 html {
   overflow: auto;
+  scroll-behavior: smooth;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
