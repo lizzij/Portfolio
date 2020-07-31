@@ -62,8 +62,12 @@ $nav-link-font-size: calc(min(20px, 3vw));
   color: $off-white !important;
 }
 
+.nav-link:hover {
+  color: $brand-color !important;
+}
+
 .active {
-  -webkit-text-stroke: 0px $dark-color;
+  @include stroke-outside(0, $dark-color);
   -webkit-text-fill-color: $dark-color;
 }
 
@@ -261,7 +265,7 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 
 
 
-.marquee {
+.Marquee {
   width: calc(100vw - 2 * #{$default-margin});
   margin: $default-margin 0 0;
   white-space: nowrap;
@@ -269,21 +273,26 @@ $label-horizontal-gap: calc(min(20px, 1vw));
   box-sizing: border-box;
 }
 
-.marquee span {
+.Marquee span {
   display: inline-block;
   will-change: transform;
-  font-size: calc(min(20px, 3vw));
+  font-size: calc(min(16px, 3vw));
   animation: marquee 42s linear infinite;
   -moz-animation: marquee 42s linear infinite; //Firefox
   -webkit-animation: marquee 42s linear infinite; //Chrome and Safari
   -o-animation: marquee 42s linear infinite; //Opera   
 }
 
-.marquee:hover span {
+.MinorBlurb {
+  @include stroke-outside;
+  color: $off-white !important;
+}
+
+.Marquee:hover span {
   animation-play-state: paused;
 }
 
-.marquee:hover span:nth-child(2) {
+.Marquee:hover span:nth-child(2) {
   animation-play-state: paused;
 }
 
@@ -309,10 +318,10 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 
 /* Respect user preferences about animations */
 @media (prefers-reduced-motion: reduce) {
-  .marquee { 
+  .Marquee { 
     white-space: normal 
   }
-  .marquee span {
+  .Marquee span {
     animation: none;
     padding-left: 0;
   }
