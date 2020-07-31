@@ -54,7 +54,7 @@ function Home() {
       </figure>
 
       <section className="Projects">
-        <Container fluid d-flex flex-column className="Content">
+        <Container fluid className="Content">
           <Row className="Tags">
             <Button variant="outline-dark" className="Pill">
               <div className="Label">selected</div>
