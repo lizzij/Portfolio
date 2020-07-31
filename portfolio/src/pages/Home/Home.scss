@@ -140,7 +140,7 @@ $label-horizontal-gap: calc(min(20px, 1vw));
   margin-bottom: $tag-horizontal-gap;
   border: calc(0.1 * #{$label-font-size}) solid $dark-color;
   box-sizing: border-box;
-  border-radius: 48px;
+  border-radius: $default-border-radius;
 
   .Label {
     color: $dark-color;

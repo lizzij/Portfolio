@@ -18,6 +18,7 @@ $brand-color: #FFB7C9;
 $default-margin: calc(min(4rem, 4vw));
 $default-double-margin: calc(min(8rem, 8vw));
 $default-large-margin: calc(min(16rem, 32vw));
+$default-border-radius: 48px;
 
 // overall ----------------------------------
 @import "~bootstrap/scss/bootstrap";
