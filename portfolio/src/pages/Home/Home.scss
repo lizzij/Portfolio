@@ -233,6 +233,8 @@ p {
   margin: 0 auto;
   line-height: 1;
   font-weight: normal;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 p:nth-child(2) {
