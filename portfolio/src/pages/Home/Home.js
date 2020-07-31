@@ -104,14 +104,14 @@ function Home() {
           sp thx to my doggo&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
           crt to my rubber duck&nbsp;[⚈ ᴥ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈◡⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈﹏⚈]&nbsp;
           Bye covid&nbsp;[⚈  ͟ʖ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ▿ ⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈ ω⚈]&nbsp;
-          OCISLY ❥&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
+          Brutalism? OCISLY ❥&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
           import tf as np&nbsp;[⚈ ᴥ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈◡⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈ ω⚈]&nbsp;
         </span>
         <span>
           sp thx to my doggo&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
           crt to my rubber duck&nbsp;[⚈ ᴥ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈◡⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈﹏⚈]&nbsp;
           Bye covid&nbsp;[⚈  ͟ʖ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ▿ ⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈ ω⚈]&nbsp;
-          OCISLY ❥&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
+          Brutalism? OCISLY ❥&nbsp;[⚈ ᵜ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈ ₃⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈‿⚈]&nbsp;
           import tf as np&nbsp;[⚈ ᴥ ⚈]&nbsp;Eliza Huang @ 2020&nbsp;[⚈◡⚈]&nbsp;Design &amp; Code w  ❥ in figma + react&nbsp;[⚈ ω⚈]&nbsp;
         </span>
       </p>

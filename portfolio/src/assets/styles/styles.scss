@@ -40,3 +40,16 @@ body {
   background-color: $off-white;
   margin: 0 $default-margin $default-margin;
 }
+
+// Text stroke on the outside
+@mixin stroke-outside($color: $dark-color, $size: 1px) {
+  text-shadow:
+    -#{$size} -#{$size} 0 $color,
+     0        -#{$size} 0 $color,
+     #{$size} -#{$size} 0 $color,
+     #{$size}  0        0 $color,
+     #{$size}  #{$size} 0 $color,
+     0         #{$size} 0 $color,
+    -#{$size}  #{$size} 0 $color,
+    -#{$size}  0        0 $color;
+}
