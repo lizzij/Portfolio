@@ -1,0 +1,99 @@
+@import "./../../assets/styles/styles.scss";
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  color: $dark-color;
+  font-family: $font-main;
+}
+
+$tag-horizontal-gap: calc(min(32px, 1vw));
+$tag-vertical-gap: calc(min(54px, 3vw));
+$label-font-size: calc(min(32px, 2.8vw));
+$label-line-height: calc(min(40px, 3.3vw));
+$label-horizontal-gap: calc(min(20px, 1vw));
+
+.Content {
+  padding-bottom: calc(#{$default-margin} - #{$tag-vertical-gap});
+  padding-top: $default-margin;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: calc(100vw - 2 * #{$default-margin} + #{$tag-horizontal-gap});
+}
+
+.Tags {
+  margin-bottom: $tag-vertical-gap;
+  text-align: center;
+}
+
+.Pill {
+  max-height: 64px;
+  padding: calc(min(12px, 0.8vw));
+  margin-right: $tag-horizontal-gap;
+  margin-bottom: $tag-horizontal-gap;
+  border: calc(0.1 * #{$label-font-size}) solid $dark-color;
+  box-sizing: border-box;
+  border-radius: $default-border-radius;
+
+  .Label {
+    color: $dark-color;
+    font-size: $label-font-size;
+    line-height: $label-line-height;
+    padding-left: $label-horizontal-gap;
+    padding-right: $label-horizontal-gap;
+  }
+}
+
+.Pill:active {
+  background-color: $dark-color;
+  box-shadow: none;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.Pill:hover {
+  background-color: $brand-color;
+  border-color: $dark-color !important;
+  .Label {
+    color: $dark-color;
+  }
+}
+
+.Pill:active:focus {
+  background-color: $dark-color !important;
+  outline-offset: none !important;
+  border-color: $dark-color !important;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.btn-success:hover, .btn-success:active, .btn-success:focus {
+  background-color: $dark-color !important;
+  border-color: $dark-color !important;
+  outline: none !important;
+}
+
+.btn:focus {
+  background-color: $dark-color !important;
+  border-color: $dark-color !important;
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+  .Label {
+    color: $light-color;
+  }
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,
+.btn.focus,.btn:active.focus,.btn.active.focus {
+  outline: none !important;
+}
+
+.row {
+  margin: 0;
+}

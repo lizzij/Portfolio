@@ -1,0 +1,48 @@
+@import "./../../assets/styles/styles.scss";
+
+.ComingSoon {
+    padding-top: calc(#{$default-large-margin} - #{$default-margin});
+    padding-bottom: $default-large-margin;
+    text-rendering: geometricPrecision;
+    text-align: center;
+}
+    
+@keyframes wacky  {
+    0%   {font-variation-settings: "wght" 100, "wdth" 50 ; }
+    25%   {font-variation-settings: "wght" 100, "wdth" 200; }
+    50%   {font-variation-settings: "wght" 900, "wdth" 200; }
+    75%   {font-variation-settings: "wght" 900, "wdth" 50;  }
+    100% {font-variation-settings: "wght" 100, "wdth" 50 ;}
+}
+
+.ComingSoon p {
+    animation:  wacky infinite;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    font-size: 2.8vw;
+    margin: 0 auto;
+    line-height: 1;
+    font-weight: normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ComingSoon p:nth-child(2) {
+    animation-delay: .1s
+}
+
+.ComingSoon p:nth-child(3) {
+    animation-delay: .2s
+}
+
+.ComingSoon p:nth-child(4) {
+    animation-delay: .3s
+}
+
+.ComingSoon p:nth-child(5) {
+    animation-delay: .4s
+}
+
+.ComingSoon p:nth-child(6) {
+    animation-delay: .5s
+}

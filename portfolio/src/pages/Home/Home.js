@@ -1,8 +1,9 @@
 import React from 'react';
-import { Container, Row, Button } from 'react-bootstrap';
 import NavBar from '../../components/NavBar'
 import Header from '../../components/Header'
 import Video from '../../components/Video';
+import Projects from '../../components/Projects';
+import ComingSoon from '../../components/ComingSoon';
 import './Home.scss';
 
 function Home() {
@@ -12,52 +13,8 @@ function Home() {
       <NavBar/>
       <Header/>
       <Video/>
-
-      <section className="Projects">
-        <Container fluid className="Content">
-          <Row className="Tags">
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">selected</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">all</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">web dev</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">ml</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">hackathon</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">coop</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">research</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">mooc</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">blog</div>
-            </Button>
-            <Button variant="outline-dark" className="Pill">
-              <div className="Label">etc</div>
-            </Button>
-          </Row>
-        </Container>
-      </section>
-
-      <div className="ComingSoon">
-        <p>I am working on it. More Content Coming Soon.</p>
-        <p>More Content Coming Soon. I am working on it.</p>
-        <p>I am working on it. More Content Coming Soon.</p>
-        <p>More Content Coming Soon. I am working on it.</p>
-        <p>I am working on it. More Content Coming Soon.</p>
-        <p>More Content Coming Soon. I am working on it.</p>
-      </div>
+      <Projects />
+      <ComingSoon />
 
       <p className="Marquee">
         <span>
