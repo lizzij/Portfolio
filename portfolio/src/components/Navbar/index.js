@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './styles.scss';
 
-class NavBar extends Component {
+export default class NavBar extends Component {
     render() {
         return (
             <Navbar expand="lg" className="NavBar fixed-top">
@@ -19,5 +19,3 @@ class NavBar extends Component {
         );
     }
 }
-
-export default NavBar;
