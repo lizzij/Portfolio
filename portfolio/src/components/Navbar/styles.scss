@@ -14,7 +14,7 @@ $nav-link-font-size: calc(min(20px, 3vw));
 .RightNavlink, .LeftNavlink {
   padding: 0 !important;
   margin: 0 !important;
-  font-size: $nav-link-font-size;
+  font-size: $nav-link-font-size !important;
 }
 
 .RightNavlink {
