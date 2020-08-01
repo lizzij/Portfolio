@@ -1,0 +1,21 @@
+@import "./../../assets/styles/styles.scss";
+
+.Video {
+  margin: 0;
+}
+
+.VideoPlayer {
+  position: relative;
+  height: calc((100vw - 2 * #{$default-margin}) / 16 * 9);
+  overflow: hidden;
+}
+
+#video-iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  width: calc(100vw - 2 * #{$default-margin});
+  z-index: 0;
+}
