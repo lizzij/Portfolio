@@ -1,12 +1,5 @@
 @import "./../../assets/styles/styles.scss";
 
-.Home {
-  display: flex;
-  flex-direction: column;
-  color: $dark-color;
-  font-family: $font-main;
-}
-
 $tag-horizontal-gap: calc(min(32px, 1vw));
 $tag-vertical-gap: calc(min(54px, 3vw));
 $label-font-size: calc(min(32px, 2.8vw));
@@ -30,16 +23,16 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 }
 
 .Pill {
-  max-height: 64px;
-  padding: calc(min(12px, 0.8vw));
-  margin-right: $tag-horizontal-gap;
-  margin-bottom: $tag-horizontal-gap;
-  border: calc(0.1 * #{$label-font-size}) solid $dark-color;
-  box-sizing: border-box;
-  border-radius: $default-border-radius;
+  max-height: 64px !important;
+  padding: calc(min(12px, 0.8vw)) !important;
+  margin-right: $tag-horizontal-gap !important;
+  margin-bottom: $tag-horizontal-gap !important;
+  border: calc(0.1 * #{$label-font-size}) solid $dark-color !important;
+  box-sizing: border-box !important;
+  border-radius: $default-border-radius !important;
 
   .Label {
-    color: $dark-color;
+    color: $dark-color !important;
     font-size: $label-font-size;
     line-height: $label-line-height;
     padding-left: $label-horizontal-gap;
@@ -48,18 +41,18 @@ $label-horizontal-gap: calc(min(20px, 1vw));
 }
 
 .Pill:active {
-  background-color: $dark-color;
+  background-color: $dark-color !important;
   box-shadow: none;
   .Label {
-    color: $light-color;
+    color: $light-color !important;
   }
 }
 
 .Pill:hover {
-  background-color: $brand-color;
+  background-color: $brand-color !important;
   border-color: $dark-color !important;
   .Label {
-    color: $dark-color;
+    color: $dark-color !important;
   }
 }
 
@@ -68,7 +61,7 @@ $label-horizontal-gap: calc(min(20px, 1vw));
   outline-offset: none !important;
   border-color: $dark-color !important;
   .Label {
-    color: $light-color;
+    color: $light-color !important;
   }
 }
 
@@ -85,7 +78,7 @@ $label-horizontal-gap: calc(min(20px, 1vw));
   outline-offset: none !important;
   box-shadow: none !important;
   .Label {
-    color: $light-color;
+    color: $light-color !important;
   }
 }
 
