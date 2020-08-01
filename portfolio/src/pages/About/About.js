@@ -4,9 +4,11 @@ import './About.scss';
 
 function About() {
 
+  const navStatus = { about: 'active' };
+
   return (
     <div className="About">
-      <NavBar/>
+      <NavBar navStatus={ navStatus } />
       <div>About</div>
     </div>
   );

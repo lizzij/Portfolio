@@ -8,10 +8,12 @@ import Footer from '../../components/Footer';
 import './Home.scss';
 
 function Home() {
-
+  
+  const navStatus = { projects: 'active' };
+  
   return (
     <div className="Home">
-      <NavBar/>
+      <NavBar navStatus={ navStatus } />
       <Header/>
       <Video/>
       <Projects/>

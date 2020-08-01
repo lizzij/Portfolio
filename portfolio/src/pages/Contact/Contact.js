@@ -4,9 +4,11 @@ import './Contact.scss';
 
 function Contact() {
 
+  const navStatus = { contact: 'active' };
+
   return (
     <div className="Contact">
-      <NavBar/>
+      <NavBar navStatus={ navStatus } />
       <div>Contact</div>
     </div>
   );
