@@ -2,20 +2,30 @@
 
 $nav-link-font-size: calc(min(20px, 3vw));
 
-.Navbar {
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: calc(#{$default-margin} / 2);
-  padding-bottom: calc(#{$default-margin} / 2);
+.NavBar {
+  padding-left: $default-margin !important;
+  padding-right: $default-margin !important;
+  padding-top: calc(#{$default-margin} / 2) !important;
+  padding-bottom: calc(#{$default-margin} / 2) !important;
   z-index: 10;
   color: $dark-color;
-  padding-left: $default-margin;
-  padding-right: $default-margin;
+}
+
+.RightNavlink, .LeftNavlink {
+  padding: 0 !important;
+  margin: 0 !important;
+  font-size: $nav-link-font-size;
+}
+
+.RightNavlink {
+  margin-left: $default-margin !important;
+  @include stroke-outside;
+  color: $off-white !important;
 }
 
 .navbar-toggler-icon {
-  height: $nav-link-font-size;
-  width: $nav-link-font-size;
+  height: $nav-link-font-size !important;
+  width: $nav-link-font-size !important;
   background-image: url(./../../assets/imgs/menu-icon.png)!important;
 }
 
@@ -29,30 +39,14 @@ $nav-link-font-size: calc(min(20px, 3vw));
 }
 
 .navbar-toggler {
-  padding: 0;
-  border: none;
+  padding: 0 !important;
+  border: none !important;
   outline: none !important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding-left: $default-margin;
-  padding-right: 0;
 }
 
 .navbar-collapse {
   padding-left: $default-margin;
   padding-right: 0;
-}
-
-.navbar-brand {
-  font-size: $nav-link-font-size;
-  color: $dark-color !important;
-}
-
-.nav-link {
-  font-size: $nav-link-font-size;
-  @include stroke-outside;
-  color: $off-white !important;
 }
 
 .nav-link:hover {

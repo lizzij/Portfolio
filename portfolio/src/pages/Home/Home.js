@@ -1,40 +1,15 @@
-import React from '../../../node_modules/react';
+import React from 'react';
+import { Container, Row, Button } from 'react-bootstrap';
+import NavBar from '../../components/NavBar'
+import Header from '../../components/Header'
 import './Home.scss';
-import { Navbar, Nav, Container, Row, Button } from 'react-bootstrap';
-
 
 function Home() {
 
   return (
     <div className="Home">
-      <Navbar expand="lg" className="fixed-top Navbar">
-        <Navbar.Brand href="/">lizzij</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="d-flex flex-row-reverse">
-            <Nav.Link className="sm-auto" href="/about">About</Nav.Link>
-            <Nav.Link className="sm-auto" href="/contact">Contact</Nav.Link>
-            <Nav.Link className="sm-auto active" href="/">Projects</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-
-      <svg className="Header"
-        xmlns="http://www.w3.org/2000/svg" width="100%" height="10%" 
-        viewBox='0.6 0 198.3 13'>
-        <text id="name-eliza" classtextlength='57' lengthAdjust="spacing" x='0' y="12" >
-            ELIZA
-        </text>
-        <text id="name-slash" classtextlength='10' lengthAdjust="spacing" x='58' y="12" >
-            /
-        </text>
-        <text id="name-zijin" classtextlength='48' lengthAdjust="spacing" x='73' y="12" >
-            ZIJIN
-        </text>
-        <text id="name-huang" classtextlength='75' lengthAdjust="spacing" x='129.6' y="12" >
-            HUANG
-        </text>
-      </svg>
+      <NavBar />
+      <Header />
 
       <figure className="Video">
         {/* <img className="VideoPlaceholder"
