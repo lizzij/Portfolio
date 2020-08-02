@@ -35,3 +35,17 @@ $contact-font-size: calc(min(4rem, 4vw));
   left: calc(100vw - 6 * #{$default-margin});
   height: calc(4.3 * #{$default-margin});
 }
+
+.Brand {
+  color: $brand-color;
+  @include stroke-outside;
+}
+
+.Light {
+  color: $off-white;
+  @include stroke-outside;
+}
+
+.Dark {
+  @include stroke-outside;
+}

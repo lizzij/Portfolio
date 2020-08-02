@@ -16,25 +16,42 @@ function Contact() {
       <NavBar navStatus={ navStatus } />
       <Container fluid>
         <Row className="noGutters border-top">
-          <Col>elizazijinhuang@gmail.com</Col>
+          <Col>
+            <span className="Brand">eliza</span>
+            <span className="Light">zijin</span>
+            <span className="Brand">huang</span>
+            <span className="Light">@</span>
+            <span className="Dark">gmail</span>
+            <span className="Light">.com</span>
+            </Col>
           <Col xs lg="1">
             <Image src={EmailIcon} className="Icons"/>
           </Col>
         </Row>
         <Row className="noGutters border-top">
-          <Col>linkedin.com/in/lizzij</Col>
+          <Col>
+            <span className="Dark">linkedin</span>
+            <span className="Light">.com/in/</span>
+            <span className="Brand">lizzij</span>
+            </Col>
           <Col xs lg="1">
             <Image src={LinkedinIcon} className="Icons"/>
           </Col>
         </Row>
         <Row className="noGutters border-top">
-          <Col>github.com/lizzij</Col>
+          <Col>
+            <span className="Dark">github</span>
+            <span className="Light">.com/</span>
+            <span className="Brand">lizzij</span></Col>
           <Col xs lg="1">
             <Image src={GithubIcon} className="Icons"/>
           </Col>
         </Row>
         <Row className="noGutters border-top border-bottom">
-          <Col>Elizachatbot</Col>
+          <Col>
+            <span className="Brand">eliza</span>
+            <span className="Light">chat</span>
+            <span className="Dark">bot</span></Col>
           <Col xs lg="1"></Col>
         </Row>
       </Container>
