@@ -1,7 +1,5 @@
 @import "./../../assets/styles/styles.scss";
 
-$contact-font-size: calc(min(4rem, 4vw));
-
 .Contact {
   height: calc(100vh - #{$default-margin});
   display: flex;
@@ -12,7 +10,7 @@ $contact-font-size: calc(min(4rem, 4vw));
 .row {
   padding-top: $default-margin;
   padding-bottom: $default-margin;
-  font-size: $contact-font-size;
+  font-size: $default-margin;
   line-height: $default-margin;
 }
 
@@ -32,19 +30,19 @@ $contact-font-size: calc(min(4rem, 4vw));
 
 .Pinky {
   position: absolute;
-  bottom: calc(0.39 * #{$default-margin});
-  left: calc(100vw - 5.3 * #{$default-margin});
-  height: calc(3.67 * #{$default-margin});
+  bottom: calc(0.385 * #{$default-margin});
+  left: calc(100vw - 5.35 * #{$default-margin});
+  height: calc(3.71 * #{$default-margin});
 }
 
 .Brand {
   color: $brand-color;
-  @include stroke-outside;
+  @include stroke-outside(1.4px);
 }
 
 .Light {
   color: $off-white;
-  @include stroke-outside;
+  @include stroke-outside(1.4px);
 }
 
 .Dark {
@@ -60,6 +58,15 @@ $contact-font-size: calc(min(4rem, 4vw));
     color: $brand-color !important;
   }
 }
+
+.border-top.row {
+  border-top: 1.4px solid $dark-color !important;
+}
+
+.border-bottom.row {
+  border-bottom: 1.4px solid $dark-color !important;
+}
+
 
 a, a:hover, a:visited, a:link, a:active
 {
