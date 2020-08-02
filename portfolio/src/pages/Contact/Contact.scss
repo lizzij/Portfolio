@@ -46,13 +46,12 @@ $contact-font-size: calc(min(4rem, 4vw));
   @include stroke-outside;
 }
 
-.Dark {
-  @include stroke-outside;
-}
-
 .ContactRow:hover {
   background-color: $brand-color;
   .Brand {
-    color: $dark-color !important;
+    color: $off-white !important;
+  }
+  .Light {
+    color: $brand-color !important;
   }
 }
