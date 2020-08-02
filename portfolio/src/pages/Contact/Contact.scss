@@ -1,0 +1,37 @@
+@import "./../../assets/styles/styles.scss";
+
+$contact-font-size: calc(min(4rem, 4vw));
+
+.Contact {
+  height: calc(100vh - #{$default-margin});
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.row {
+  padding-top: $default-margin;
+  padding-bottom: $default-margin;
+  font-size: $contact-font-size;
+}
+
+.col {
+  padding: 0 !important;
+}
+
+.col-lg-1 {
+  padding: 0 !important;
+  text-align: right;
+}
+
+.Icons {
+  width: $default-margin;
+  height: $default-margin;
+}
+
+.Pinky {
+  position: absolute;
+  bottom: calc(0.31 * #{$default-margin});
+  left: calc(100vw - 6 * #{$default-margin});
+  height: calc(4.3 * #{$default-margin});
+}
