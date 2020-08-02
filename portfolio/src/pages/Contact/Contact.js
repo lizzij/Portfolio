@@ -15,7 +15,7 @@ function Contact() {
     <div className="Contact">
       <NavBar navStatus={ navStatus } />
       <Container fluid>
-        <Row className="noGutters border-top">
+        <Row className="ContactRow noGutters border-top">
           <Col>
             <span className="Brand">eliza</span>
             <span className="Light">zijin</span>
@@ -28,7 +28,7 @@ function Contact() {
             <Image src={EmailIcon} className="Icons"/>
           </Col>
         </Row>
-        <Row className="noGutters border-top">
+        <Row className="ContactRow noGutters border-top">
           <Col>
             <span className="Dark">linkedin</span>
             <span className="Light">.com/in/</span>
@@ -38,7 +38,7 @@ function Contact() {
             <Image src={LinkedinIcon} className="Icons"/>
           </Col>
         </Row>
-        <Row className="noGutters border-top">
+        <Row className="ContactRow noGutters border-top">
           <Col>
             <span className="Dark">github</span>
             <span className="Light">.com/</span>
@@ -47,7 +47,7 @@ function Contact() {
             <Image src={GithubIcon} className="Icons"/>
           </Col>
         </Row>
-        <Row className="noGutters border-top border-bottom">
+        <Row className="ContactRow noGutters border-top border-bottom">
           <Col>
             <span className="Brand">eliza</span>
             <span className="Light">chat</span>

@@ -33,7 +33,7 @@ $contact-font-size: calc(min(4rem, 4vw));
   position: absolute;
   bottom: calc(0.3 * #{$default-margin});
   left: calc(100vw - 6 * #{$default-margin});
-  height: calc(4.3 * #{$default-margin});
+  height: calc(4.25 * #{$default-margin});
 }
 
 .Brand {
@@ -48,4 +48,11 @@ $contact-font-size: calc(min(4rem, 4vw));
 
 .Dark {
   @include stroke-outside;
+}
+
+.ContactRow:hover {
+  background-color: $brand-color;
+  .Brand {
+    color: $dark-color !important;
+  }
 }
