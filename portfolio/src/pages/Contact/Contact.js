@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import NavBar from '../../components/NavBar'
-import EmailIcon from '../../assets/imgs/email.png'
-import LinkedinIcon from '../../assets/imgs/linkedin.png'
-import GithubIcon from '../../assets/imgs/github.png'
+// import EmailIcon from '../../assets/imgs/email.png'
+// import LinkedinIcon from '../../assets/imgs/linkedin.png'
+// import GithubIcon from '../../assets/imgs/github.png'
 import Pinky from '../../assets/imgs/pinky.gif'
 import './Contact.scss';
 
@@ -26,7 +26,7 @@ function Contact() {
               <span className="Light">.com</span>
               </Col>
             <Col xs lg="1">
-              <Image src={EmailIcon} className="Icons"/>
+              {/* <Image src={EmailIcon} className="Icons"/> */}
             </Col>
           </Row>
         </a>
@@ -39,7 +39,7 @@ function Contact() {
               <span className="Brand">lizzij</span>
               </Col>
             <Col xs lg="1">
-              <Image src={LinkedinIcon} className="Icons"/>
+              {/* <Image src={LinkedinIcon} className="Icons"/> */}
             </Col>
           </Row>
         </a>
@@ -51,7 +51,7 @@ function Contact() {
               <span className="Light">.com/</span>
               <span className="Brand">lizzij</span></Col>
             <Col xs lg="1">
-              <Image src={GithubIcon} className="Icons"/>
+              {/* <Image src={GithubIcon} className="Icons"/> */}
             </Col>
           </Row>
         </a>
