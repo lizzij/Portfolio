@@ -13,6 +13,7 @@ $contact-font-size: calc(min(4rem, 4vw));
   padding-top: $default-margin;
   padding-bottom: $default-margin;
   font-size: $contact-font-size;
+  line-height: $default-margin;
 }
 
 .col {
@@ -31,9 +32,9 @@ $contact-font-size: calc(min(4rem, 4vw));
 
 .Pinky {
   position: absolute;
-  bottom: calc(0.3 * #{$default-margin});
-  left: calc(100vw - 6 * #{$default-margin});
-  height: calc(4.25 * #{$default-margin});
+  bottom: calc(0.39 * #{$default-margin});
+  left: calc(100vw - 5.3 * #{$default-margin});
+  height: calc(3.67 * #{$default-margin});
 }
 
 .Brand {
