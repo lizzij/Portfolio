@@ -1,5 +1,7 @@
 @import "./../../assets/styles/styles.scss";
 
+$default-border: calc(min(0.14rem, 0.14vw));
+
 .Contact {
   height: calc(100vh - #{$default-margin});
   display: flex;
@@ -32,17 +34,17 @@
   position: absolute;
   bottom: calc(0.385 * #{$default-margin});
   left: calc(100vw - 5.35 * #{$default-margin});
-  height: calc(3.71 * #{$default-margin});
+  height: calc(3.72 * #{$default-margin});
 }
 
 .Brand {
   color: $brand-color;
-  @include stroke-outside(1.4px);
+  @include stroke-outside();
 }
 
 .Light {
   color: $off-white;
-  @include stroke-outside(1.4px);
+  @include stroke-outside();
 }
 
 .Dark {
@@ -60,11 +62,11 @@
 }
 
 .border-top.row {
-  border-top: 1.4px solid $dark-color !important;
+  border-top: $default-border solid $dark-color !important;
 }
 
 .border-bottom.row {
-  border-bottom: 1.4px solid $dark-color !important;
+  border-bottom: $default-border solid $dark-color !important;
 }
 
 
