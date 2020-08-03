@@ -3,7 +3,21 @@
 $default-border: calc(min(0.1rem, 0.1vw));
 
 .Contact {
-  height: calc(100vh - #{$default-margin});
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-x: hidden;
+}
+
+.Module {
+  height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  overflow-x: hidden;
+}
+
+.ContactContainer {
+  height: calc(100% - #{$default-margin});
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
