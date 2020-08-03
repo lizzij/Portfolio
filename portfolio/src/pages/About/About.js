@@ -12,7 +12,7 @@ function About() {
       <div className="Blurb">
         Eliza is a senior undergrad studying computer science at northeastern university.
         Now a software engineering intern at Harvard Catalyst.
-        Will graduate in may 2021! hire me@     
+        Will graduate in may 2021!
         * Not readable? She felt just as awkward introducing herself in  3rd person.
         </div>
     </div>

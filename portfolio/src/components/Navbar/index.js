@@ -8,7 +8,7 @@ export default class NavBar extends Component {
             <Navbar expand="lg" className="NavBar fixed-top">
                 <Navbar.Brand className="LeftNavlink" href="/">lizzij</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+                <Navbar.Collapse id="basic-navbar-nav" className="d-flex flex-row justify-content-end">
                     <Nav className="d-flex flex-row">
                         <Nav.Link className={`RightNavlink sm-auto ${this.props.navStatus.projects}`} href="/">Projects</Nav.Link>
                         <Nav.Link className={`RightNavlink sm-auto ${this.props.navStatus.contact}`} href="/contact">Contact</Nav.Link>
