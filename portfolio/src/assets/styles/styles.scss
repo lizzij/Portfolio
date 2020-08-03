@@ -28,7 +28,7 @@ $font-main: 'Soulcraft';
 $off-white: #F4F4F4;
 $dark-color: #222222;
 $light-color: white;
-$brand-color: #fad4da; 
+$brand-color: #FFB7C9; // #fad4da; 
 $pinky-color: #FFB7C9;
 $contrast-color: #80cede;
 
@@ -60,6 +60,7 @@ body {
   background-color: $off-white;
   margin: 0 $default-margin $default-margin;
   font-family: $font-main;
+  overflow-x: hidden;
 }
 
 @mixin stroke-outside($size: 1px, $color: $dark-color) {

@@ -25,6 +25,8 @@
     font-weight: normal;
     overflow: hidden;
     white-space: nowrap;
+    @include stroke-outside;
+    color: $off-white !important;
 }
 
 .ComingSoon p:nth-child(2) {
