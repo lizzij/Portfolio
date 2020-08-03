@@ -31,7 +31,7 @@ $default-border: calc(min(0.1rem, 0.1vw));
 
 .Pinky {
   position: absolute;
-  bottom: calc(0.385 * #{$default-margin});
+  bottom: calc(0.381 * #{$default-margin});
   left: calc(100vw - 5.35 * #{$default-margin});
   height: calc(3.72 * #{$default-margin});
 }
@@ -55,8 +55,8 @@ $default-border: calc(min(0.1rem, 0.1vw));
   .Brand {
     color: $off-white !important;
   }
-  .Light {
-    color: $brand-color !important;
+  .Brand {
+    color: $pinky-color !important;
   }
 }
 

@@ -22,6 +22,7 @@ $nav-link-font-size: calc(min(20px, 3vw));
   margin-left: $default-margin !important;
   @include stroke-outside;
   color: $off-white !important;
+  opacity: 0.8;
 }
 
 .navbar-toggler-icon {
@@ -52,9 +53,11 @@ $nav-link-font-size: calc(min(20px, 3vw));
 
 .nav-link:hover {
   color: $brand-color !important;
+  opacity: 1;
 }
 
 .active {
   @include stroke-outside(0, $dark-color);
   -webkit-text-fill-color: $dark-color;
+  opacity: 1;
 }
