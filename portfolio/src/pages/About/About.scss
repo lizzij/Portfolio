@@ -1,12 +1,11 @@
 @import "./../../assets/styles/styles.scss";
 
-$blurb-default-font-size: calc(1 * #{$default-margin});
+$blurb-default-font-size: calc(0.8 * #{$default-margin});
 
 .About {
-    height: calc(100vh - #{$default-margin});
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    position: absolute;
+    bottom: $default-margin;
+    width: calc(100vw - 2 * #{$default-margin});
 }
 
 .Blurb {
