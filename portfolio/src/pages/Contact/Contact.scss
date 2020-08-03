@@ -1,6 +1,6 @@
 @import "./../../assets/styles/styles.scss";
 
-$default-border: calc(min(0.14rem, 0.14vw));
+$default-border: calc(min(0.1rem, 0.1vw));
 
 .Contact {
   height: calc(100vh - #{$default-margin});
@@ -62,11 +62,11 @@ $default-border: calc(min(0.14rem, 0.14vw));
 }
 
 .border-top.row {
-  border-top: $default-border solid $dark-color !important;
+  border-top: $default-border solid rgba(34, 34, 34, 0.8) !important;
 }
 
 .border-bottom.row {
-  border-bottom: $default-border solid $dark-color !important;
+  border-bottom: $default-border solid rgba(34, 34, 34, 0.8) !important;
 }
 
 

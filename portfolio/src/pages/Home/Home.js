@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 import Video from '../../components/Video';
 import Projects from '../../components/Projects';
 import ComingSoon from '../../components/ComingSoon';
-import Scene from '../../components/Scene';
+// import Scene from '../../components/Scene';
 import Footer from '../../components/Footer';
 import './Home.scss';
 
@@ -19,7 +19,7 @@ function Home() {
       <Video/>
       <Projects/>
       <ComingSoon/>
-      <Scene/>
+      {/* <Scene/> */}
       <Footer/>
     </div>
   );
