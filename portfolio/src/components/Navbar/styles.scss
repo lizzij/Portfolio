@@ -3,6 +3,7 @@
 $nav-link-font-size: calc(min(20px, 3vw));
 
 .NavBar {
+  width: 100vw;
   padding-left: $default-margin !important;
   padding-right: $default-margin !important;
   padding-top: calc(#{$default-margin} / 2) !important;

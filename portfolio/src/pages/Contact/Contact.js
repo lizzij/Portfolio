@@ -12,11 +12,10 @@ function Contact() {
   const navStatus = { contact: 'active' };
 
   return (
-
+    <>
     <div className="Contact">
       <NavBar navStatus={ navStatus } />
-      <div class="Module">
-      <Container fluid className="ContactContainer">
+      <Container fluid>
         <a href="mailto:elizazijinhuang@gmail.com" rel="noopener noreferrer" target="_blank"> 
           <Row className="ContactRow noGutters border-top">
             <Col>
@@ -66,10 +65,11 @@ function Contact() {
           <Col xs lg="1"></Col>
         </Row>
       </Container>
+
       
-      </div>
-      <Image src={Pinky} className="Pinky"/>
     </div>
+    <Image src={Pinky} className="Pinky"/>
+    </>
   );
 }
 
