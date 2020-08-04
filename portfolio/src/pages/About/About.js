@@ -1,5 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/NavBar'
+import Scene from '../../components/Scene'
 import './About.scss';
 
 function About() {
@@ -9,6 +10,7 @@ function About() {
   return (
     <div className="About">
       <NavBar navStatus={ navStatus } />
+      <Scene />
       <div className="Blurb">
         Eliza is a senior undergrad studying computer science at northeastern university.
         Now a software engineering intern at Harvard Catalyst.
