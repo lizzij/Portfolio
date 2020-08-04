@@ -5,6 +5,7 @@ import Video from '../../components/Video';
 import Projects from '../../components/Projects';
 import ComingSoon from '../../components/ComingSoon';
 // import Scene from '../../components/Scene';
+import ContactButton from '../../components/ContactButton';
 import Footer from '../../components/Footer';
 import './Home.scss';
 
@@ -15,12 +16,13 @@ function Home() {
   return (
     <div className="Home">
       <NavBar navStatus={ navStatus } />
-      <Header/>
-      <Video/>
-      <Projects/>
-      <ComingSoon/>
-      {/* <Scene/> */}
-      <Footer/>
+      <Header />
+      <Video />
+      <Projects />
+      <ComingSoon />
+      {/* <Scene /> */}
+      <ContactButton />
+      <Footer />
     </div>
   );
 }

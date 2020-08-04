@@ -51,6 +51,16 @@ $default-border: calc(min(0.1rem, 0.1vw));
 }
 
 .ContactRow:hover {
+  background-color: $brand-color;
+  .Brand {
+    color: $off-white !important;
+  }
+  .Light {
+    color: $pinky-color !important;
+  }
+}
+
+.ContactRow:active {
   background-color: $dark-color;
   .Dark {
     color: $off-white !important;
