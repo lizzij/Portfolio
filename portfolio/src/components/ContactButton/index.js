@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Nav } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import './styles.scss';
 
 const ContactButton = () => {

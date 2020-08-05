@@ -18,12 +18,15 @@ class Scene extends React.Component {
     var engine = Engine.create({
     });
 
+    const defaultWidth = window.innerWidth - 100;
+    const defaultHeight = window.innerHeight - 200;
+
     var render = Render.create({
       element: this.refs.scene,
       engine: engine,
       options: {
-        width: 600,
-        height: 600,
+        width: defaultWidth,
+        height: defaultHeight,
         wireframes: false
       }
     });
@@ -33,18 +36,18 @@ class Scene extends React.Component {
       let drawing = document.createElement("canvas");
   
       drawing.width = '150'
-      drawing.height = '150'
+      drawing.height = '150';
   
       let ctx = drawing.getContext("2d");
   
-      ctx.fillStyle = "blue";
-      //ctx.fillRect(0, 0, 150, 150);
+      ctx.fillStyle = "#FFB7C9";
+      ctx.fillRect(0, 0, 150, 150);
       ctx.beginPath();
       ctx.arc(75, 75, 20, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
-      ctx.fillStyle = "#fff";
-      ctx.font = "20pt sans-serif";
+      ctx.fillStyle = "#222222";
+      ctx.font = "20pt Soul";
       ctx.textAlign = "center";
       ctx.fillText(string, 75, 85);
   
@@ -59,7 +62,7 @@ class Scene extends React.Component {
     var testText = Bodies.circle(x,y,circleSize,{
       render: {
         sprite: {
-            texture: createImage("Your Text String"),
+            texture: createImage("projects contact about"),
             xScale: 1,
             yScale: 1
         }
@@ -68,9 +71,9 @@ class Scene extends React.Component {
     World.add(engine.world, [
       // walls
       Bodies.rectangle(200, 0, 600, 50, { isStatic: true }),
-      Bodies.rectangle(200, 600, 600, 50, { isStatic: true }),
-      Bodies.rectangle(260, 300, 50, 600, { isStatic: true }),
-      Bodies.rectangle(0, 300, 50, 600, { isStatic: true })
+      Bodies.rectangle(400, defaultHeight, defaultWidth, 50, { isStatic: true }),
+      Bodies.rectangle(260, defaultWidth, 50, defaultHeight, { isStatic: true }),
+      Bodies.rectangle(0, defaultWidth, 50, defaultHeight, { isStatic: true })
     ]);
     World.add(engine.world, [ballA, ballB, testText]);
 
