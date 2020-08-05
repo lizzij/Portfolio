@@ -27,24 +27,20 @@ class Scene extends React.Component {
       options: {
         width: defaultWidth,
         height: defaultHeight,
-        wireframes: false
+        wireframes: false,
+        background: '#f4f4f4'
       }
     });
 
     const createImage = (string) => {
-
       let drawing = document.createElement("canvas");
-  
       drawing.width = '150'
       drawing.height = '150';
-  
       let ctx = drawing.getContext("2d");
       const myFont = new FontFace('CiseauxMatisseW90-Cut-Out-Linear', 'url(//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff2)');
-
       myFont.load().then((font) => {
         document.fonts.add(font);
       });
-
       ctx.fillStyle = "#FFB7C9";
       ctx.fillRect(0, 0, 150, 150);
       ctx.beginPath();
@@ -55,7 +51,6 @@ class Scene extends React.Component {
       ctx.font = "20pt CiseauxMatisseW90-Cut-Out-Linear";
       ctx.textAlign = "center";
       ctx.fillText(string, 75, 85);
-
       return drawing.toDataURL("image/png");
     }
 
