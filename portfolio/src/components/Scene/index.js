@@ -67,7 +67,7 @@ class Scene extends React.Component {
     var testText = Bodies.circle(x,y,circleSize,{
       render: {
         sprite: {
-            texture: createImage("projects contact about"),
+            texture: createImage("In Dev"),
             xScale: 1,
             yScale: 1
         }
