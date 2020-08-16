@@ -9,6 +9,7 @@ function About() {
 
   return (
     <div className="About">
+      {/* <link href="//db.onlinewebfonts.com/c/b5079189698c77632120991d1178c1d1?family=CiseauxMatisseW90-Cut-Out-Linear" rel="stylesheet" type="text/css"/> */}
       <NavBar navStatus={ navStatus } />
       <Scene />
       <div className="Blurb">

@@ -20,9 +20,10 @@ class Scene extends React.Component {
     var engine = Engine.create({
     });
 
-    const defaultWidth = window.innerWidth - 100;
-    const defaultHeight = window.innerHeight - 200;
-
+    // const defaultWidth = window.innerWidth - 100;
+    // const defaultHeight = window.innerHeight - 200;
+    const defaultWidth = 500;
+    const defaultHeight = 500;
     var render = Render.create({
       element: this.sceneRef.current,
       engine: engine,
@@ -40,15 +41,16 @@ class Scene extends React.Component {
       drawing.height = '150';
       let ctx = drawing.getContext("2d");
 
-      // const myFont = new FontFace('CiseauxMatisseW90-Cut-Out-Linear', 
-      // 'url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff") format("woff")');
-      // myFont.load().then((font) => {
-      //   document.fonts.add(font);
-      //   console.log("Cavas font loaded")
+      const myFont = new FontFace('CMW90-Cut-Out-Linear', 
+      'url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.ttf") format("truetype")');
+      myFont.load().then((font) => {
+        document.fonts.add(font);
+        console.log("Cavas font loaded")
+        ctx.font = myFont;
         
-      // }).catch(function(error) {
-      //   console.log("Canvas error", error);
-      // });;
+      }).catch(function(error) {
+        console.log("Canvas error", error);
+      });;
 
       ctx.fillStyle = "#FFB7C9";
       ctx.fillRect(0, 0, 150, 150);
@@ -58,7 +60,7 @@ class Scene extends React.Component {
       ctx.fill();
       ctx.fillStyle = "#222222";
       console.log("ctx.font", ctx.font);
-      ctx.font = "20pt CiseauxMatisseW90-Cut-Out-Linear";
+      ctx.font = "20pt CMW90-Cut-Out-Linear";
       console.log("ctx.font", ctx.font);
       ctx.textAlign = "center";
       ctx.fillText(string, 75, 85);
@@ -112,8 +114,13 @@ class Scene extends React.Component {
   }
 
   render() {
-    // return <div style={{ fontFamily: "CiseauxMatisseW90-Cut-Out-Linear" }} ref={this.sceneRef} />;
-    return <div ref={this.sceneRef}></div>;
+    // return <div style={{ fontFamily: "CMW90-Cut-Out-Linear" }} ref={this.sceneRef} />;
+    // return <div ref={this.sceneRef}></div>;
+    return (
+      <div ref={this.sceneRef}>
+        <div style={{ fontFamily: "CMW90-Cut-Out-Linear" }}>eliz ais a senior&nbsp;</div>
+      </div>
+    )
   }
 }
 export default Scene;
