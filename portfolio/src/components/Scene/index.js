@@ -1,10 +1,12 @@
 import React from "react";
 import Matter from "matter-js";
+import './styles.scss';
 
 class Scene extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.sceneRef = React.createRef();
   }
 
   componentDidMount() {
@@ -22,7 +24,7 @@ class Scene extends React.Component {
     const defaultHeight = window.innerHeight - 200;
 
     var render = Render.create({
-      element: this.refs.scene,
+      element: this.sceneRef.current,
       engine: engine,
       options: {
         width: defaultWidth,
@@ -37,10 +39,17 @@ class Scene extends React.Component {
       drawing.width = '150'
       drawing.height = '150';
       let ctx = drawing.getContext("2d");
-      const myFont = new FontFace('CiseauxMatisseW90-Cut-Out-Linear', 'url(//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff2)');
-      myFont.load().then((font) => {
-        document.fonts.add(font);
-      });
+
+      // const myFont = new FontFace('CiseauxMatisseW90-Cut-Out-Linear', 
+      // 'url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff") format("woff")');
+      // myFont.load().then((font) => {
+      //   document.fonts.add(font);
+      //   console.log("Cavas font loaded")
+        
+      // }).catch(function(error) {
+      //   console.log("Canvas error", error);
+      // });;
+
       ctx.fillStyle = "#FFB7C9";
       ctx.fillRect(0, 0, 150, 150);
       ctx.beginPath();
@@ -48,9 +57,12 @@ class Scene extends React.Component {
       ctx.closePath();
       ctx.fill();
       ctx.fillStyle = "#222222";
+      console.log("ctx.font", ctx.font);
       ctx.font = "20pt CiseauxMatisseW90-Cut-Out-Linear";
+      console.log("ctx.font", ctx.font);
       ctx.textAlign = "center";
       ctx.fillText(string, 75, 85);
+
       return drawing.toDataURL("image/png");
     }
 
@@ -100,7 +112,8 @@ class Scene extends React.Component {
   }
 
   render() {
-    return <div ref="scene" />;
+    // return <div style={{ fontFamily: "CiseauxMatisseW90-Cut-Out-Linear" }} ref={this.sceneRef} />;
+    return <div ref={this.sceneRef}></div>;
   }
 }
 export default Scene;
