@@ -41,16 +41,15 @@ class Scene extends React.Component {
       drawing.height = '150';
       let ctx = drawing.getContext("2d");
 
-      const myFont = new FontFace('CMW90-Cut-Out-Linear', 
-      'url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.ttf") format("truetype")');
-      myFont.load().then((font) => {
-        document.fonts.add(font);
-        console.log("Cavas font loaded")
-        ctx.font = myFont;
-        
-      }).catch(function(error) {
-        console.log("Canvas error", error);
-      });;
+      // const myFont = new FontFace('CMW90-Cut-Out-Linear', 
+      // 'url("/src/assets/fonts/CiseauxMatisseW90Cut-Out-Linear.ttf") format("truetype")');
+      // myFont.load().then((font) => {
+      //   document.fonts.add(font);
+      //   console.log("Cavas font loaded")
+      //   ctx.font = myFont;
+      // }).catch(function(error) {
+      //   console.log("Canvas error:", error.message);
+      // });;
 
       ctx.fillStyle = "#FFB7C9";
       ctx.fillRect(0, 0, 150, 150);
@@ -114,13 +113,7 @@ class Scene extends React.Component {
   }
 
   render() {
-    // return <div style={{ fontFamily: "CMW90-Cut-Out-Linear" }} ref={this.sceneRef} />;
-    // return <div ref={this.sceneRef}></div>;
-    return (
-      <div ref={this.sceneRef}>
-        <div style={{ fontFamily: "CMW90-Cut-Out-Linear" }}>eliz ais a senior&nbsp;</div>
-      </div>
-    )
+    return <div ref={this.sceneRef}></div>;
   }
 }
 export default Scene;
