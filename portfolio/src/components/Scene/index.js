@@ -36,31 +36,7 @@ class Scene extends React.Component {
     });
 
     const createImage = (string) => {
-      let drawing;
-      
-      // document.fonts.load("20pt CMW90-Cut-Out-Linear").then(function() {
-      //   console.log('document fonts ready')
-      //   drawing = document.createElement("canvas");
-      //   drawing.width = '150'
-      //   drawing.height = '150';
-      //   let ctx = drawing.getContext("2d");
-      //   ctx.fillStyle = "#FFB7C9";
-      //   ctx.fillRect(0, 0, 150, 150);
-      //   ctx.beginPath();
-      //   ctx.arc(75, 75, 20, 0, Math.PI * 2, true);
-      //   ctx.closePath();
-      //   ctx.fill();
-      //   ctx.fillStyle = "#222222";
-      //   console.log("ctx.font", ctx.font);
-      //   ctx.font = "20pt CMW90-Cut-Out-Linear";
-      //   console.log("ctx.font", ctx.font);
-      //   ctx.textAlign = "center";
-      //   ctx.fillText(string, 75, 85);
-        
-      //   return drawing.toDataURL("image/png");
-      // });
-
-      drawing = document.createElement("canvas");
+      let drawing = document.createElement("canvas");
       drawing.width = '150'
       drawing.height = '150';
       let ctx = drawing.getContext("2d");
@@ -71,9 +47,7 @@ class Scene extends React.Component {
       ctx.closePath();
       ctx.fill();
       ctx.fillStyle = "#222222";
-      console.log("ctx.font", ctx.font);
       ctx.font = "20pt CMW90-Cut-Out-Linear";
-      console.log("ctx.font", ctx.font);
       ctx.textAlign = "center";
       ctx.fillText(string, 75, 85);
       
@@ -126,12 +100,7 @@ class Scene extends React.Component {
   }
 
   render() {
-    return (
-      <div ref={this.sceneRef}>
-        <div style={{ fontFamily: "CMW90-Cut-Out-Linear" }}>eliz ais a senior&nbsp;</div>
-      </div>
-    )
-    // return <div ref={this.sceneRef}></div>;
+    return <div ref={this.sceneRef}></div>;
   }
 }
 export default Scene;
