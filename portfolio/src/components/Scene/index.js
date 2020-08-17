@@ -14,7 +14,6 @@ class Scene extends React.Component {
       Render = Matter.Render,
       World = Matter.World,
       Bodies = Matter.Bodies,
-      Composites = Matter.Composites,
       Constraint = Matter.Constraint,
       Mouse = Matter.Mouse,
       MouseConstraint = Matter.MouseConstraint;
@@ -97,7 +96,7 @@ class Scene extends React.Component {
     var ballC = Bodies.circle(defaultWidth*0.9, defaultWidth*0.7, defaultWidth*0.04, { restitution: 0.5 });
 
     const textToShape = (text, width=defaultWidth*0.09, x, y) => 
-      Bodies.circle(x, y, width * 0.3, {
+      Bodies.rectangle(x, y, width, defaultHeight*0.4, {
         restitution: 0.2,
         render: {
           sprite: {
