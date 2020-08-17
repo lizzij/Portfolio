@@ -14,6 +14,8 @@ class Scene extends React.Component {
       Render = Matter.Render,
       World = Matter.World,
       Bodies = Matter.Bodies,
+      Composites = Matter.Composites,
+      Constraint = Matter.Constraint,
       Mouse = Matter.Mouse,
       MouseConstraint = Matter.MouseConstraint;
 
@@ -34,13 +36,13 @@ class Scene extends React.Component {
       }
     });
 
-    const createImage = (text, width, height, color) => {
+    const createImage = (text, width, height, color='#f4f4f4') => {
       let drawing = document.createElement("canvas");
       drawing.width = width;
       drawing.height = height;
       let ctx = drawing.getContext("2d");
       ctx.fillStyle = color;
-      ctx.fillRect(0, 0, width, height);
+      if (color !== '#f4f4f4') ctx.fillRect(0, 0, width, height);
       ctx.beginPath();
       ctx.arc(width/2, height/2, 20, 0, Math.PI * 2, true);
       ctx.closePath();
@@ -70,41 +72,77 @@ class Scene extends React.Component {
         { isStatic: true, render: {fillStyle: "f4f4f4"}}), // right
       Bodies.rectangle(0, defaultHeight / 2, borderThickness, defaultHeight, 
         { isStatic: true, render: {fillStyle: "f4f4f4"}}) // left
-  ]);
+    ]);
 
-  var ballA = Bodies.circle(210, 100, 30, { restitution: 0.5 });
-  var ballB = Bodies.circle(110, 50, 30, { restitution: 0.5 });
-  var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.03, {
-    restitution: 0.3,
-    render: {
-      sprite: {
-          texture: createImage("Drag~", defaultWidth*0.12, defaultWidth*0.06, pink)
+    var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.06, {
+      restitution: 0.3,
+      render: {
+        sprite: {
+            texture: createImage("Drag~", defaultWidth*0.12, defaultWidth*0.06, pink)
+        }
       }
-    }
-  });
+    });
 
-  var click = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, defaultWidth*0.032, {
-    restitution: 0.3,
-    render: {
-      sprite: {
-        texture: createImage("Click Me!", defaultWidth*0.16, defaultWidth*0.064, pink)
-    }
-    }
-  });
+    var click = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, defaultWidth*0.064, {
+      restitution: 0.3,
+      render: {
+        sprite: {
+          texture: createImage("Click me!", defaultWidth*0.16, defaultWidth*0.064, pink)
+      }
+      }
+    });
 
-  World.add(engine.world, [ballA, ballB, drag, click]);
+    var ballA = Bodies.circle(defaultWidth*0.3, defaultWidth*0.3, 30, { restitution: 0.5 });
+    var ballB = Bodies.circle(defaultWidth*0.1, defaultWidth*0.9, 30, { restitution: 0.5 });
+    var ballC = Bodies.circle(defaultWidth*0.9, defaultWidth*0.7, 30, { restitution: 0.5 });
+
+    const textToShape = (text, width=defaultWidth*0.09, x, y) => 
+      Bodies.circle(x, y, width*0.31, {
+        restitution: 0.2,
+        render: {
+          sprite: {
+            texture: createImage(text, width, defaultWidth*0.04)
+        }
+      }}
+    );
+
+    const hi = textToShape('Hi', defaultWidth*0.04, defaultWidth*0.3, defaultWidth*0.3);
+    const name = textToShape('I\'m Eliza', defaultWidth*0.12, defaultWidth*0.3, defaultWidth*0.3);
+
+    var constraint = Constraint.create({
+        bodyA: hi,
+        pointA: { x: defaultWidth*0.02, y: 0 },
+        bodyB: name,
+        pointB: { x: -defaultWidth*0.06, y: 0 },
+        stiffness: 0.5,
+        damping: 0.9,
+        render: { strokeStyle: '#222222' }
+    });
+
+    const neu = textToShape('an undergrad at NEU', defaultWidth*0.33, defaultWidth*0.4, defaultWidth*0.35);
+    const cs = textToShape('majoring in CS', defaultWidth*0.24, defaultWidth*0.6, defaultWidth*0.33)
+    const hms = textToShape('now swe intern at HMS', defaultWidth*0.36, defaultWidth*0.4, defaultWidth*0.37);
+    const grad = textToShape('graduating may 2021', defaultWidth*0.36, defaultWidth*0.6, defaultWidth*0.67);
+    
+
+    World.add(engine.world, [ballA, ballB, ballC, drag, click, 
+      hi, name, constraint, 
+      neu, cs, hms, grad]);
+
+    // World.add(engine.world, all);
 
     // add mouse control
     var mouse = Mouse.create(render.canvas),
       mouseConstraint = MouseConstraint.create(engine, {
         mouse: mouse,
         constraint: {
-          stiffness: 0.2,
+          stiffness: 0.1,
           render: {
             visible: false
           }
         }
-      });
+      }
+    );
 
     World.add(engine.world, mouseConstraint);
 
