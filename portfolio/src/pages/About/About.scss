@@ -4,8 +4,10 @@ $blurb-default-font-size: calc(0.8 * #{$default-margin});
 
 .About {
     position: absolute;
-    bottom: $default-margin;
-    width: calc(100vw - 2 * #{$default-margin});
+    border: 0;
+    padding: 0;
+    // bottom: $default-margin;
+    // width: calc(100vw - 2 * #{$default-margin});
 }
 
 .Blurb {

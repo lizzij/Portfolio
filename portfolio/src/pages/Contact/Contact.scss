@@ -5,6 +5,7 @@ $default-border: calc(min(0.1rem, 0.1vw));
 .Contact {
   position: absolute;
   bottom: $default-margin;
+  margin: 0 $default-margin;
   width: calc(100vw - 2 * #{$default-margin});
 }
 
