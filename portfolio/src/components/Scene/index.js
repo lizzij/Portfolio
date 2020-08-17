@@ -1,7 +1,6 @@
 import React from "react";
 import Matter from "matter-js";
 import './styles.scss';
-import Pinky from '../../assets/imgs/pinky.gif'
 
 class Scene extends React.Component {
   constructor(props) {
@@ -24,8 +23,6 @@ class Scene extends React.Component {
 
     const defaultWidth = window.innerWidth;
     const defaultHeight = window.innerHeight;
-    // const defaultWidth = 500;
-    // const defaultHeight = 500;
     var render = Render.create({
       element: this.sceneRef.current,
       engine: engine,
@@ -37,26 +34,29 @@ class Scene extends React.Component {
       }
     });
 
-    const createImage = (string) => {
+    const createImage = (text, width, height, color) => {
       let drawing = document.createElement("canvas");
-      drawing.width = '150'
-      drawing.height = '150';
+      drawing.width = width;
+      drawing.height = height;
       let ctx = drawing.getContext("2d");
-      ctx.fillStyle = "#FFB7C9";
+      ctx.fillStyle = color;
+      ctx.fillRect(0, 0, width, height);
       ctx.beginPath();
-      ctx.arc(75, 75, 20, 0, Math.PI * 2, true);
+      ctx.arc(width/2, height/2, 20, 0, Math.PI * 2, true);
       ctx.closePath();
       ctx.fill();
       ctx.fillStyle = "#222222";
       ctx.font = "36pt CMW90-Cut-Out-Linear";
       ctx.textAlign = "center";
-      ctx.fillText(string, 75, 85);
+      ctx.textBaseline = "middle";
+      ctx.fillText(text, width/2, height/2);
       
       return drawing.toDataURL("image/png");
     }
 
     const borderThickness = 64;
     const gravity = 0
+    const pink = "#FFB7C9";
 
     engine.world.gravity.y = gravity;
 
@@ -67,29 +67,31 @@ class Scene extends React.Component {
       Bodies.rectangle(0, defaultHeight / 2, borderThickness, defaultHeight, { isStatic: true }) // left
   ]);
 
-  var blue = Bodies.rectangle(253, 95, 244, 35, {
-    restitution: 0.5,
-    render: {
-      fillStyle: '#ff0000',
-      sprite: {
-        texture: 'https://workbypost.com/miles/2blue.png'
-      }
-    }
-  });
-
   var ballA = Bodies.circle(210, 100, 30, { restitution: 0.5 });
   var ballB = Bodies.circle(110, 50, 30, { restitution: 0.5 });
-  var testText = Bodies.circle(100, 100, 100, {
+  var testText = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, 100, {
     render: {
       sprite: {
-          texture: createImage("In Dev"),
+          texture: createImage("Drag~", 180, 90, pink),
           xScale: 1,
           yScale: 1
       }
     }
   });
 
-  World.add(engine.world, [blue, ballA, ballB, testText]);
+  var ball1 = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, 80, {
+    restitution: 0.5,
+    render: {
+      fillStyle: pink,
+      sprite: {
+        texture: createImage("Click Me!", 240, 90, pink),
+        xScale: 1,
+        yScale: 1
+    }
+    }
+  });
+
+  World.add(engine.world, [ball1, ballA, ballB, testText]);
 
     // add mouse control
     var mouse = Mouse.create(render.canvas),
