@@ -4,21 +4,34 @@
   font-family: 'Soulcraft';
   src: url('../fonts/Soulcraft.ttf') format('truetype');
 }
-@font-face {font-family: "Ciseaux MatisseW90-Cut-Out-Linear"; 
-  src: url('../fonts/CiseauxMatisseW90Cut-Out-Linear.ttf') format('truetype');
-}
-@font-face { 
-  font-family: 'CWCutOut';
-  src: url('../fonts/Ciseaux Matisse W90 Cut-Out.ttf') format('truetype');
-}
 @font-face {
-  font-family: 'CWBoxedLinear';
-  src: url('../fonts/Ciseaux MatisseW90Boxed-Linear.ttf') format('truetype');
+  font-family: "CMW90-Cut-Out-Linear"; 
+  src: url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.ttf") format("truetype");
+  font-display: auto;
 }
-@font-face {
-  font-family: 'CWBoxed';
-  src: url('../fonts/Ciseaux Matisse W90 Boxed.ttf') format('truetype');
-}
+// @font-face {
+//   font-family: "CMW90-Cut-Out-Linear"; 
+//   src: url('../fonts/CiseauxMatisseW90Cut-Out-Linear.ttf') format('truetype'); 
+//   src: url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.eot"); 
+//   src: 
+//   url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.eot?#iefix") format("embedded-opentype"), 
+//   url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff2") format("woff2"), 
+//   url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.woff") format("woff"), 
+//   url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.ttf") format("truetype"), 
+//   url("//db.onlinewebfonts.com/t/b5079189698c77632120991d1178c1d1.svg#CiseauxMatisseW90-Cut-Out-Linear") format("svg"); 
+// }
+// @font-face { 
+//   font-family: 'CWCutOut';
+//   src: url('../fonts/Ciseaux Matisse W90 Cut-Out.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'CWBoxedLinear';
+//   src: url('../fonts/Ciseaux MatisseW90Boxed-Linear.ttf') format('truetype');
+// }
+// @font-face {
+//   font-family: 'CWBoxed';
+//   src: url('../fonts/Ciseaux Matisse W90 Boxed.ttf') format('truetype');
+// }
 $font-text: 'Montserrat', sans-serif;
 $font-main: 'Soulcraft';
 
