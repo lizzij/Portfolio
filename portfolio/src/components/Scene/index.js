@@ -48,7 +48,7 @@ class Scene extends React.Component {
       ctx.closePath();
       ctx.fill();
       ctx.fillStyle = "#222222";
-      const testFontSize = defaultWidth * 0.03;
+      const testFontSize = defaultWidth * 0.05;
       ctx.font = `${testFontSize}px CMW90-Cut-Out-Linear`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
@@ -74,62 +74,60 @@ class Scene extends React.Component {
         { isStatic: true, render: {fillStyle: "f4f4f4"}}) // left
     ]);
 
-    var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.06, {
+    var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.08, {
       restitution: 0.3,
       render: {
         sprite: {
-            texture: createImage("Drag~", defaultWidth*0.12, defaultWidth*0.06, pink)
+            texture: createImage("Drag~", defaultWidth*0.18, defaultWidth*0.08, pink)
         }
       }
     });
 
-    var click = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, defaultWidth*0.064, {
+    var click = Bodies.circle(defaultWidth*0.3, defaultHeight*0.5, defaultWidth*0.08, {
       restitution: 0.3,
       render: {
         sprite: {
-          texture: createImage("Click me!", defaultWidth*0.16, defaultWidth*0.064, pink)
+          texture: createImage("Click me!", defaultWidth*0.25, defaultWidth*0.08, pink)
       }
       }
     });
 
-    var ballA = Bodies.circle(defaultWidth*0.3, defaultWidth*0.3, 30, { restitution: 0.5 });
-    var ballB = Bodies.circle(defaultWidth*0.1, defaultWidth*0.9, 30, { restitution: 0.5 });
-    var ballC = Bodies.circle(defaultWidth*0.9, defaultWidth*0.7, 30, { restitution: 0.5 });
+    var ballA = Bodies.circle(defaultWidth*0.3, defaultWidth*0.3, defaultWidth*0.04, { restitution: 0.5 });
+    var ballB = Bodies.circle(defaultWidth*0.1, defaultWidth*0.9, defaultWidth*0.04, { restitution: 0.5 });
+    var ballC = Bodies.circle(defaultWidth*0.9, defaultWidth*0.7, defaultWidth*0.04, { restitution: 0.5 });
 
     const textToShape = (text, width=defaultWidth*0.09, x, y) => 
-      Bodies.circle(x, y, width*0.31, {
+      Bodies.circle(x, y, width * 0.3, {
         restitution: 0.2,
         render: {
           sprite: {
-            texture: createImage(text, width, defaultWidth*0.04)
+            texture: createImage(text, width, defaultWidth*0.06)
         }
       }}
     );
 
-    const hi = textToShape('Hi', defaultWidth*0.04, defaultWidth*0.3, defaultWidth*0.3);
-    const name = textToShape('I\'m Eliza', defaultWidth*0.12, defaultWidth*0.3, defaultWidth*0.3);
+    const hi = textToShape('Hi', defaultWidth*0.06, defaultWidth*0.3, defaultHeight*0.2);
+    const name = textToShape('I\'m Eliza', defaultWidth*0.22, defaultWidth*0.3, defaultHeight*0.2);
 
     var constraint = Constraint.create({
         bodyA: hi,
-        pointA: { x: defaultWidth*0.02, y: 0 },
+        pointA: { x: defaultWidth*0.03, y: 0 },
         bodyB: name,
-        pointB: { x: -defaultWidth*0.06, y: 0 },
+        pointB: { x: -defaultWidth*0.11, y: 0 },
         stiffness: 0.5,
         damping: 0.9,
         render: { strokeStyle: '#222222' }
     });
 
-    const neu = textToShape('an undergrad at NEU', defaultWidth*0.33, defaultWidth*0.4, defaultWidth*0.35);
-    const cs = textToShape('majoring in CS', defaultWidth*0.24, defaultWidth*0.6, defaultWidth*0.33)
-    const hms = textToShape('now swe intern at HMS', defaultWidth*0.36, defaultWidth*0.4, defaultWidth*0.37);
-    const grad = textToShape('graduating may 2021', defaultWidth*0.36, defaultWidth*0.6, defaultWidth*0.67);
+    const neu = textToShape('an undergrad at NEU', defaultWidth*0.5, defaultWidth*0.4, defaultHeight*0.3);
+    const cs = textToShape('majoring in CS', defaultWidth*0.38, defaultWidth*0.38, defaultHeight*0.33)
+    const hms = textToShape('now swe intern at HMS', defaultWidth*0.58, defaultWidth*0.36, defaultHeight*0.4);
+    const grad = textToShape('graduating may 2021', defaultWidth*0.48, defaultWidth*0.4, defaultHeight*0.5);
     
 
     World.add(engine.world, [ballA, ballB, ballC, drag, click, 
       hi, name, constraint, 
       neu, cs, hms, grad]);
-
-    // World.add(engine.world, all);
 
     // add mouse control
     var mouse = Mouse.create(render.canvas),
@@ -149,7 +147,7 @@ class Scene extends React.Component {
     const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
 
     Matter.Events.on(mouseConstraint, "mousedown", function(event) {
-      World.add(engine.world, Bodies.circle(getRandomInt(defaultWidth), 50, 30, 
+      World.add(engine.world, Bodies.circle(getRandomInt(defaultWidth), 50, defaultWidth*0.04, 
       { restitution: 0.7 }));
     });
 
