@@ -30,7 +30,7 @@ class Scene extends React.Component {
         width: defaultWidth,
         height: defaultHeight,
         wireframes: false,
-        background: '#6c757d'
+        background: '#f4f4f4'
       }
     });
 
@@ -46,7 +46,8 @@ class Scene extends React.Component {
       ctx.closePath();
       ctx.fill();
       ctx.fillStyle = "#222222";
-      ctx.font = "36pt CMW90-Cut-Out-Linear";
+      const testFontSize = defaultWidth * 0.03;
+      ctx.font = `${testFontSize}px CMW90-Cut-Out-Linear`;
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(text, width/2, height/2);
@@ -54,44 +55,44 @@ class Scene extends React.Component {
       return drawing.toDataURL("image/png");
     }
 
-    const borderThickness = 64;
+    const borderThickness = Math.min(64, 0.04 * defaultWidth);
     const gravity = 0
     const pink = "#FFB7C9";
 
     engine.world.gravity.y = gravity;
 
     World.add(engine.world, [
-      Bodies.rectangle(defaultWidth / 2, 0, defaultWidth, borderThickness, { isStatic: true }), // top
-      Bodies.rectangle(defaultWidth / 2, defaultHeight, defaultWidth, borderThickness, { isStatic: true }), // bottom
-      Bodies.rectangle(defaultWidth, defaultHeight / 2, borderThickness, defaultHeight, { isStatic: true }), // right
-      Bodies.rectangle(0, defaultHeight / 2, borderThickness, defaultHeight, { isStatic: true }) // left
+      Bodies.rectangle(defaultWidth / 2, 0, defaultWidth, borderThickness, 
+        { isStatic: true, render: {fillStyle: "f4f4f4"}}), // top
+      Bodies.rectangle(defaultWidth / 2, defaultHeight, defaultWidth, borderThickness, 
+        { isStatic: true, render: {fillStyle: "f4f4f4"}}), // bottom
+      Bodies.rectangle(defaultWidth, defaultHeight / 2, borderThickness, defaultHeight, 
+        { isStatic: true, render: {fillStyle: "f4f4f4"}}), // right
+      Bodies.rectangle(0, defaultHeight / 2, borderThickness, defaultHeight, 
+        { isStatic: true, render: {fillStyle: "f4f4f4"}}) // left
   ]);
 
   var ballA = Bodies.circle(210, 100, 30, { restitution: 0.5 });
   var ballB = Bodies.circle(110, 50, 30, { restitution: 0.5 });
-  var testText = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, 100, {
+  var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.03, {
+    restitution: 0.3,
     render: {
       sprite: {
-          texture: createImage("Drag~", 180, 90, pink),
-          xScale: 1,
-          yScale: 1
+          texture: createImage("Drag~", defaultWidth*0.12, defaultWidth*0.06, pink)
       }
     }
   });
 
-  var ball1 = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, 80, {
-    restitution: 0.5,
+  var click = Bodies.circle(defaultWidth*0.2, defaultHeight*0.5, defaultWidth*0.032, {
+    restitution: 0.3,
     render: {
-      fillStyle: pink,
       sprite: {
-        texture: createImage("Click Me!", 240, 90, pink),
-        xScale: 1,
-        yScale: 1
+        texture: createImage("Click Me!", defaultWidth*0.16, defaultWidth*0.064, pink)
     }
     }
   });
 
-  World.add(engine.world, [ball1, ballA, ballB, testText]);
+  World.add(engine.world, [ballA, ballB, drag, click]);
 
     // add mouse control
     var mouse = Mouse.create(render.canvas),
@@ -107,8 +108,11 @@ class Scene extends React.Component {
 
     World.add(engine.world, mouseConstraint);
 
+    const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+
     Matter.Events.on(mouseConstraint, "mousedown", function(event) {
-      World.add(engine.world, Bodies.circle(150, 50, 30, { restitution: 0.7 }));
+      World.add(engine.world, Bodies.circle(getRandomInt(defaultWidth), 50, 30, 
+      { restitution: 0.7 }));
     });
 
     Engine.run(engine);
