@@ -73,7 +73,7 @@ class Scene extends React.Component {
         { isStatic: true, render: {fillStyle: "f4f4f4"}}) // left
     ]);
 
-    var drag = Bodies.circle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.08, {
+    var drag = Bodies.rectangle(defaultWidth*0.7, defaultHeight*0.78, defaultWidth*0.18, defaultWidth*0.12, {
       restitution: 0.3,
       render: {
         sprite: {
@@ -82,8 +82,8 @@ class Scene extends React.Component {
       }
     });
 
-    var click = Bodies.circle(defaultWidth*0.3, defaultHeight*0.5, defaultWidth*0.08, {
-      restitution: 0.3,
+    var click = Bodies.rectangle(defaultWidth*0.3, defaultHeight*0.45, defaultWidth*0.25, defaultWidth*0.12, {
+      restitution: 0.9,
       render: {
         sprite: {
           texture: createImage("Click me!", defaultWidth*0.25, defaultWidth*0.08, pink)
@@ -96,7 +96,7 @@ class Scene extends React.Component {
     var ballC = Bodies.circle(defaultWidth*0.9, defaultWidth*0.7, defaultWidth*0.04, { restitution: 0.5 });
 
     const textToShape = (text, width=defaultWidth*0.09, x, y) => 
-      Bodies.rectangle(x, y, width, defaultHeight*0.4, {
+      Bodies.rectangle(x, y, width, defaultHeight*0.2, {
         restitution: 0.2,
         render: {
           sprite: {
@@ -119,7 +119,7 @@ class Scene extends React.Component {
     });
 
     const neu = textToShape('an undergrad at NEU', defaultWidth*0.5, defaultWidth*0.4, defaultHeight*0.3);
-    const cs = textToShape('majoring in CS', defaultWidth*0.38, defaultWidth*0.38, defaultHeight*0.33)
+    const cs = textToShape('majoring in CS', defaultWidth*0.39, defaultWidth*0.39, defaultHeight*0.33)
     const hms = textToShape('now swe intern at HMS', defaultWidth*0.58, defaultWidth*0.36, defaultHeight*0.4);
     const grad = textToShape('graduating may 2021', defaultWidth*0.48, defaultWidth*0.4, defaultHeight*0.5);
     
