@@ -11,29 +11,27 @@ const ProjectTag = ({label}) => {
     );
 }
 
-const ProjectTags = ({options}) => {
-    const [selectedOption, setSelectionOption] = useState([]);
-    const [displayKey, displayName] = selectedOption;
+const ProjectTags = ({tags}) => {
+    const [selectedTag, setSelectionTag] = useState([]);
+    const [displayKey, displayName] = selectedTag;
 
     useEffect(() => {
-        setSelectionOption([...options][0]);
+        setSelectionTag([...tags][0]);
     }, []);
 
     return (
         <Container fluid className="Content">
           <Row className="Tags">
-            {[...options].map(option => {
-                const [key, value] = option;
+            {[...tags].map(tag => {
+                const [key, value] = tag;
                 return (
-                    <ProjectTag
-                        className={
-                            key === displayKey
-                            ? "tag-item selected"
-                            : "tag-item"
-                        }
-                        label={value} 
-                        onClick={() => setSelectionOption([key, value])}
-                    />
+                    <Button 
+                        variant="outline-dark" 
+                        className={key === displayKey? "Pill selected" : "Pill"}
+                        onClick={() => setSelectionTag([key, value])}
+                        >
+                        <div className="Label">{value}</div>
+                    </Button>
                 );
             })}
           </Row>
@@ -42,7 +40,7 @@ const ProjectTags = ({options}) => {
 }
 
 ProjectTags.defaultProps = {
-    options: new Map([
+    tags: new Map([
         ["selected", "selected"],
         ["all", "all"],
         ["web dev", "web dev"],
@@ -57,7 +55,7 @@ ProjectTags.defaultProps = {
 };
 
 ProjectTags.proTypes = {
-    options: PropTypes.instanceOf(Map)
+    tags: PropTypes.instanceOf(Map)
 };
 
 export default ProjectTags;
