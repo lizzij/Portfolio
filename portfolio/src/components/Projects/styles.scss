@@ -9,11 +9,3 @@ $tag-horizontal-gap: calc(min(32px, 1vw));
   align-items: initial;
   width: calc(100vw - 2 * #{$default-margin} + #{$tag-horizontal-gap});
 }
-
-.Tags {
-  text-align: center;
-}
-
-.row {
-  margin: 0;
-}
