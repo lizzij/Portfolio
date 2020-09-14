@@ -23,11 +23,11 @@ class Face extends Component {
         onMouseMove={ this._onMouseMove.bind(this) }
         className='cursor'
         >
-        <div class="left eye">
-            <div class="pupil"></div>
+        <div className="left eye">
+            <div className="pupil"></div>
         </div>
-        <div class="right eye">
-            <div class="pupil"></div>
+        <div className="right eye">
+            <div className="pupil"></div>
         </div>
         <div id="mouth">
           <svg viewBox="0 0 500 500">

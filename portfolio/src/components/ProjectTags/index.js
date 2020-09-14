@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Button, Row } from 'react-bootstrap';
 import './styles.scss';
 
-const ProjectTags = ({tags}) => {
+const ProjectTags = ({ tags, selectTag }) => {
     const [selectedTag, setSelectionTag] = useState([]);
     const [displayKey, displayValue] = selectedTag;
 
@@ -19,7 +19,10 @@ const ProjectTags = ({tags}) => {
                     <Button 
                         variant="outline-dark" 
                         className={key === displayKey? "Pill selected" : "Pill"}
-                        onClick={() => setSelectionTag([key, value])}
+                        onClick={() => {
+                            setSelectionTag([key, value]);
+                            selectTag(value);
+                        }}
                         >
                         <div className="Label">{value}</div>
                     </Button>
