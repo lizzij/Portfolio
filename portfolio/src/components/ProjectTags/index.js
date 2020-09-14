@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types'
-import { Container, Button, Row } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
 import './styles.scss';
 
 const ProjectTags = ({tags}) => {
@@ -12,8 +12,7 @@ const ProjectTags = ({tags}) => {
     }, []);
 
     return (
-        <Container fluid className="Content">
-          <Row className="Tags">
+        <Row className="Tags">
             {[...tags].map(tag => {
                 const [key, value] = tag;
                 return (
@@ -26,8 +25,8 @@ const ProjectTags = ({tags}) => {
                     </Button>
                 );
             })}
-          </Row>
-        </Container>
+        </Row>
+        
     )
 }
 
