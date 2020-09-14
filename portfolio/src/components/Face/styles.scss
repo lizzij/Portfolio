@@ -15,25 +15,25 @@ div#face, div#face * {
 }
 
 .eye {
-	width: 25%;
-	height: 25%;
+	width: 20%;
+	height: 20%;
 	background: $off-white;
 	position: absolute;
-	top: 28%;
+	top: 22%;
 }
-.left.eye { left: 17%; }
-.right.eye { right: 17%; }
+.left.eye { left: 15%; }
+.right.eye { right: 15%; }
 .pupil { 
 	background: $dark-color;
-	top: 40%;
-	width: 60%;
-	height: 60%;
+	top: 30%;
+	width: 70%;
+	height: 70%;
 	position: relative;
-	left: 20%;
+	left: 15%;
 	transform-origin: bottom;
 }
 #mouth {
 	position: relative;
 	width: 100%;
-	padding-top: 27%;
+	padding-top: 15%;
 }
