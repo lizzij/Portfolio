@@ -5,7 +5,7 @@ import './styles.scss';
 
 const ProjectTags = ({tags}) => {
     const [selectedTag, setSelectionTag] = useState([]);
-    const [displayKey, _] = selectedTag;
+    const [displayKey, displayValue] = selectedTag;
 
     useEffect(() => {
         setSelectionTag([...tags][0]);
