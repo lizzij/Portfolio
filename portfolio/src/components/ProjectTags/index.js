@@ -3,17 +3,9 @@ import PropTypes from 'prop-types'
 import { Container, Button, Row } from 'react-bootstrap';
 import './styles.scss';
 
-const ProjectTag = ({label}) => {
-    return (
-        <Button variant="outline-dark" className="Pill">
-            <div className="Label">{label}</div>
-        </Button>
-    );
-}
-
 const ProjectTags = ({tags}) => {
     const [selectedTag, setSelectionTag] = useState([]);
-    const [displayKey, displayName] = selectedTag;
+    const [displayKey, _] = selectedTag;
 
     useEffect(() => {
         setSelectionTag([...tags][0]);

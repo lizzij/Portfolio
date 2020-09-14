@@ -3,11 +3,11 @@ import ProjectTags from '../ProjectTags'
 import './styles.scss';
 
 const Projects = () => {
-    return (
+  return (
     <section className="Projects">
         <ProjectTags />
     </section>
-    );
+  );
 }
 
 export default Projects;
