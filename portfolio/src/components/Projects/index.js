@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import ProjectTags from '../ProjectTags'
+import ProjectCard from '../ProjectCard'
 import './styles.scss';
 
 class Projects extends React.Component {
@@ -11,7 +12,7 @@ class Projects extends React.Component {
     }
   }
 
-  doSomethignWithTag = (tag) => {
+  setSelectedTag = (tag) => {
       this.setState({
         selectedTag: tag
       })
@@ -21,8 +22,9 @@ class Projects extends React.Component {
     return (
       <section className="Projects">
         <Container fluid>
-          <ProjectTags selectTag={this.doSomethignWithTag}/>  
+          <ProjectTags selectTag={this.setSelectedTag}/>  
           <div>{this.state.selectedTag}</div>
+          <ProjectCard />
         </Container>
       </section>
     )

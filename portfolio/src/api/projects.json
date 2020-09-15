@@ -1,0 +1,52 @@
+{
+    "projects": {
+        "aop": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "por": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "turbulence2d": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "turbulence3d": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "hackmit": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "searchneu": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "seqr": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        },
+        "shrine": {
+            "title": "",
+            "tags": [],
+            "image": "",
+            "readme": ""
+        }
+    }
+}
