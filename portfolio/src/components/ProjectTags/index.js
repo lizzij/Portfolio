@@ -5,10 +5,10 @@ import './styles.scss';
 
 const ProjectTags = ({ tags, selectTag }) => {
     const [selectedTag, setSelectionTag] = useState([]);
-    const [displayKey, displayValue] = selectedTag;
+    const [selectedTagKey, selectedTagValue] = selectedTag;
 
     useEffect(() => {
-        setSelectionTag([...tags][0]);
+        setSelectionTag([...tags][0]); // eslint-disable-next-line
     }, []);
 
     return (
@@ -18,11 +18,12 @@ const ProjectTags = ({ tags, selectTag }) => {
                 return (
                     <Button 
                         variant="outline-dark" 
-                        className={key === displayKey? "Pill selected" : "Pill"}
+                        className={key === selectedTagKey? "Pill selected" : "Pill"}
                         onClick={() => {
                             setSelectionTag([key, value]);
                             selectTag(value);
                         }}
+                        value={selectedTagValue}
                         >
                         <div className="Label">{value}</div>
                     </Button>
