@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import ProjectTags from '../ProjectTags'
 import ProjectCard from '../ProjectCard'
+import { projects } from '../../api/projects.json'
 import './styles.scss';
 
 class Projects extends React.Component {
@@ -24,7 +25,13 @@ class Projects extends React.Component {
         <Container fluid>
           <ProjectTags selectTag={this.setSelectedTag}/>  
           <div>{this.state.selectedTag}</div>
-          <ProjectCard />
+          {
+            Object.values(projects).map(project => {
+              if (project.tags.includes(this.state.selectedTag)) {
+                return <ProjectCard project={JSON.stringify(project)} />
+              }
+            })
+          }
         </Container>
       </section>
     )

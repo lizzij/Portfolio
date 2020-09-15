@@ -19,7 +19,7 @@ function Home() {
       <Header />
       <Video />
       <Projects />
-      <ComingSoon />
+      {/* <ComingSoon /> */}
       {/* <Scene /> */}
       <ContactButton />
       <Footer />

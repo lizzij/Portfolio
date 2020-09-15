@@ -1,18 +1,11 @@
 import React from 'react';
 import './styles.scss';
 
-class ProjectCard extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
-
-  render() {
+const ProjectCard = ({ project }) => {
     return (
-      <div>card</div>
-    )
-  }
+        <div>{project}</div>
+        
+    );
 }
 
 export default ProjectCard;

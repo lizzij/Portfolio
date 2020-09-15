@@ -1,51 +1,59 @@
 {
     "projects": {
         "aop": {
-            "title": "",
-            "tags": [],
+            "title": "Aortic Pressure Forcasting with Deep Sequence Learning",
+            "tags": ["selected", "all", "ml", "research"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "por": {
-            "title": "",
-            "tags": [],
+            "title": "Power of Repetition Webapp + Chatbot",
+            "tags": ["selected", "all", "web dev", "research"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "turbulence2d": {
-            "title": "",
-            "tags": [],
+            "title": "Galilean Symmetry in Deep Dynamics Models",
+            "tags": ["selected", "all", "ml", "research"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "turbulence3d": {
-            "title": "",
-            "tags": [],
+            "title": "3D Turbulence Fluid Dynamics Forcasting",
+            "tags": ["selected", "all", "ml", "research"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "hackmit": {
-            "title": "",
-            "tags": [],
+            "title": "Fresh Detect @HackMIT: IOT Smart Shipment Container",
+            "tags": ["selected", "all", "hackathon"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "searchneu": {
             "title": "",
-            "tags": [],
+            "tags": ["selected", "all", "web dev"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "seqr": {
-            "title": "",
-            "tags": [],
+            "title": "seqr: Webapp for Rare Disease Causal Gene",
+            "tags": ["selected", "all", "web dev", "coop"],
             "image": "",
+            "blurb": "",
             "readme": ""
         },
         "shrine": {
             "title": "",
             "tags": [],
             "image": "",
+            "blurb": "",
             "readme": ""
         }
     }
