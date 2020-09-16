@@ -3,8 +3,7 @@ import NavBar from '../../components/NavBar'
 import Header from '../../components/Header'
 import Video from '../../components/Video';
 import Projects from '../../components/Projects';
-// import ComingSoon from '../../components/ComingSoon';
-// import Scene from '../../components/Scene';
+import ComingSoon from '../../components/ComingSoon';
 import ContactButton from '../../components/ContactButton';
 import Footer from '../../components/Footer';
 import './Home.scss';
@@ -19,8 +18,7 @@ function Home() {
       <Header />
       <Video />
       <Projects />
-      {/* <ComingSoon /> */}
-      {/* <Scene /> */}
+      <ComingSoon />
       <ContactButton />
       <Footer />
     </div>
