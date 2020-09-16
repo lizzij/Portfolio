@@ -1,7 +1,7 @@
 @import "./../../assets/styles/styles.scss";
 
 .ComingSoon {
-    padding-top: calc(#{$default-large-margin} - #{$default-margin});
+    padding-top: $default-double-margin;
     padding-bottom: $default-large-margin;
     text-rendering: geometricPrecision;
     text-align: center;
