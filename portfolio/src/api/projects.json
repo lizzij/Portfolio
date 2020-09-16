@@ -3,56 +3,56 @@
         "aop": {
             "title": "Aortic Pressure Forcasting with Deep Sequence Learning",
             "tags": ["selected", "all", "ml", "research"],
-            "image": "",
+            "image": "/imgs/aop.png",
             "blurb": "",
             "readme": ""
         },
         "por": {
-            "title": "Power of Repetition Webapp + Chatbot",
+            "title": "Power of Repetition",
             "tags": ["selected", "all", "web dev", "research"],
-            "image": "",
+            "image": "/imgs/por.gif",
             "blurb": "",
             "readme": ""
         },
         "turbulence2d": {
             "title": "Galilean Symmetry in Deep Dynamics Models",
             "tags": ["selected", "all", "ml", "research"],
-            "image": "",
+            "image": "/imgs/turbulence2d.gif",
             "blurb": "",
             "readme": ""
         },
         "turbulence3d": {
             "title": "3D Turbulence Fluid Dynamics Forcasting",
             "tags": ["selected", "all", "ml", "research"],
-            "image": "",
+            "image": "/imgs/turbulence3d.gif",
             "blurb": "",
             "readme": ""
         },
         "hackmit": {
-            "title": "Fresh Detect @HackMIT: IOT Smart Shipment Container",
+            "title": "Fresh Detect @HackMIT",
             "tags": ["selected", "all", "hackathon"],
-            "image": "",
+            "image": "/imgs/hackmit.jpg",
             "blurb": "",
             "readme": ""
         },
         "searchneu": {
-            "title": "",
+            "title": "SearchNEU @SandboxNEU",
             "tags": ["selected", "all", "web dev"],
-            "image": "",
+            "image": "/imgs/searchneu.png",
             "blurb": "",
             "readme": ""
         },
         "seqr": {
-            "title": "seqr: Webapp for Rare Disease Causal Gene",
+            "title": "seqr @Broad",
             "tags": ["selected", "all", "web dev", "coop"],
-            "image": "",
+            "image": "/imgs/seqr.gif",
             "blurb": "",
             "readme": ""
         },
         "shrine": {
-            "title": "",
-            "tags": [],
-            "image": "",
+            "title": "SHRINE @Harvard Catalyst",
+            "tags": ["selected", "all", "web dev", "coop"],
+            "image": "/imgs/shrine.png",
             "blurb": "",
             "readme": ""
         }

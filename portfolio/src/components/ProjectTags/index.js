@@ -12,7 +12,7 @@ const ProjectTags = ({ tags, selectTag }) => {
     }, []);
 
     return (
-        <Row className="Tags">
+        <Row className="Tags" key={selectedTagValue}>
             {[...tags].map(tag => {
                 const [key, value] = tag;
                 return (
@@ -23,7 +23,7 @@ const ProjectTags = ({ tags, selectTag }) => {
                             setSelectionTag([key, value]);
                             selectTag(value);
                         }}
-                        value={selectedTagValue}
+                        key={key}
                         >
                         <div className="Label">{value}</div>
                     </Button>

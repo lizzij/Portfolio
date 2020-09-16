@@ -5,18 +5,18 @@ $tag-vertical-gap: calc(min(54px, 3vw));
 $label-font-size: calc(min(32px, 2.8vw));
 $label-line-height: calc(min(40px, 3.3vw));
 $label-horizontal-gap: calc(min(20px, 1vw));
+$pill-vertical-gap: calc(min(12px, 0.8vw));
 
 .Tags {
   text-align: center;
-}
-
-.row {
   margin: 0;
+  padding-top: $default-margin !important;
+  padding-bottom: calc(#{$default-margin} - #{$pill-vertical-gap}) !important;
 }
 
 .Pill {
   max-height: 64px !important;
-  padding: calc(min(12px, 0.8vw)) !important;
+  padding: $pill-vertical-gap !important;
   margin-right: $tag-horizontal-gap !important;
   margin-bottom: $tag-horizontal-gap !important;
   border: calc(0.1 * #{$label-font-size}) solid $dark-color !important;

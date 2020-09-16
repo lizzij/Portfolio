@@ -19,18 +19,17 @@ class Projects extends React.Component {
       })
   }
 
+  
+
   render() {
     return (
       <section className="Projects">
         <Container fluid>
-          <ProjectTags selectTag={this.setSelectedTag}/>  
-          <div>{this.state.selectedTag}</div>
+          <ProjectTags selectTag={this.setSelectedTag}/>
           {
-            Object.values(projects).map(project => {
-              if (project.tags.includes(this.state.selectedTag)) {
-                return <ProjectCard project={JSON.stringify(project)} />
-              }
-            })
+            Object.values(projects)
+              .filter(project => project.tags.includes(this.state.selectedTag))
+              .map((project, index) => <ProjectCard key={index} project={project} />)
           }
         </Container>
       </section>

@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar'
 import Header from '../../components/Header'
 import Video from '../../components/Video';
 import Projects from '../../components/Projects';
-import ComingSoon from '../../components/ComingSoon';
+// import ComingSoon from '../../components/ComingSoon';
 // import Scene from '../../components/Scene';
 import ContactButton from '../../components/ContactButton';
 import Footer from '../../components/Footer';
