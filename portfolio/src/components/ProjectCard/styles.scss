@@ -1,9 +1,9 @@
 @import "./../../assets/styles/styles.scss";
 
-$title-font-size: calc(min(24px, 2.8vw));
-$title-line-height: calc(min(36px, 4.2vw));
-$abstract-font-size: calc(min(21px, 2.8vw));
-$abstract-line-height: calc(min(32px, 4.2vw));
+$title-font-size: calc(min(24px, 2.4vw));
+$title-line-height: calc(min(36px, 3.6vw));
+$abstract-font-size: calc(min(21px, 2vw));
+$abstract-line-height: calc(min(32px, 3vw));
 
 .Title {
     padding-top: $abstract-font-size;
@@ -23,6 +23,10 @@ $abstract-line-height: calc(min(32px, 4.2vw));
 .ProjectCardRow {
     padding-top: 0 !important;
     padding-bottom: calc(#{$default-margin} * 3) !important;
+
+    .moveUp {
+        margin-top: calc(#{$default-margin} * -8) !important;
+    }
 }
 
 .ProjectCard {
