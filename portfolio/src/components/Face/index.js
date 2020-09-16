@@ -40,7 +40,7 @@ class Face extends Component {
             " />
             <text width="500">
               <textPath href="#curve">
-                Contact Me! Say Hi. Don't be a stranger
+                Contact Me. Say Hi! Don't be a stranger
               </textPath>
             </text>
           </svg>

@@ -29,7 +29,7 @@ class Projects extends React.Component {
           {
             Object.values(projects)
               .filter(project => project.tags.includes(this.state.selectedTag))
-              .map((project, index) => <ProjectCard key={index} project={project} />)
+              .map((project, index) => <ProjectCard key={index} index={index} project={project} />)
           }
         </Container>
       </section>

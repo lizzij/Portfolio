@@ -1,1 +1,36 @@
 @import "./../../assets/styles/styles.scss";
+
+$title-font-size: calc(min(24px, 2.8vw));
+$title-line-height: calc(min(36px, 4.2vw));
+$abstract-font-size: calc(min(21px, 2.8vw));
+$abstract-line-height: calc(min(32px, 4.2vw));
+
+.Title {
+    padding-top: $abstract-font-size;
+    padding-bottom: calc(#{$abstract-font-size} / 7);
+    color: $dark-color !important;
+    font-size: $title-font-size;
+    line-height: $title-line-height;
+}
+
+.Thumbnail {
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.ProjectCardRow {
+    padding-top: 0 !important;
+    padding-bottom: calc(#{$default-margin} * 3) !important;
+}
+
+.ProjectCard {
+    padding: 0 !important;
+}
+
+.Abstract {
+    font-family: $font-text;
+    font-size: $abstract-font-size;
+    line-height: $abstract-line-height;
+}

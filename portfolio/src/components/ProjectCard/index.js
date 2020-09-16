@@ -1,16 +1,21 @@
 import React from 'react';
-import { Row, Image } from 'react-bootstrap';
+import { Row, Col, Image } from 'react-bootstrap';
 import './styles.scss';
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ index, project }) => {
+    // eslint-disable-next-line
     const {title, tags, image, blurb, readme} = project;
     return (
-        <Row>
-            <Image src={image}/>
-            <div>{title}</div>
-            <div>{tags}</div>
-            <div>{blurb}</div>
-            <div>{readme}</div>
+        <Row className="ProjectCardRow">
+            <Col className={`ProjectCard ${index % 8} col-md-6 offset-md-3`}>
+                <Image src={image} fluid className="Thumbnail"/>
+                <div className="Title">{title}</div>
+                <div className="Abstract">
+                    <div>{blurb}</div>
+                    {/* <div>Tags: {tags.join(', ')}.</div> */}
+                </div>
+                <div>{readme}</div>
+            </Col>
         </Row>
     );
 }
