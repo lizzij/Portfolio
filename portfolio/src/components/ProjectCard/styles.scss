@@ -4,6 +4,7 @@ $title-font-size: calc(min(24px, 2.4vw));
 $title-line-height: calc(min(36px, 3.6vw));
 $abstract-font-size: calc(min(21px, 2vw));
 $abstract-line-height: calc(min(32px, 3vw));
+$medium: 768px;
 
 .Title {
     padding-top: $abstract-font-size;
@@ -24,9 +25,12 @@ $abstract-line-height: calc(min(32px, 3vw));
     padding-top: 0 !important;
     padding-bottom: calc(#{$default-margin} * 3) !important;
 
-    .moveUp {
-        margin-top: calc(#{$default-margin} * -8) !important;
+    @media screen and (min-width: $medium) {
+        .moveUp {
+            margin-top: calc(#{$default-margin} * -8) !important;
+        }
     }
+    
 }
 
 .ProjectCard {
