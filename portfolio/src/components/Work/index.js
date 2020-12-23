@@ -14,7 +14,7 @@ function Work() {
   return (
     <Collapse 
       accordion 
-      defaultActiveKey={['1']}
+      // defaultActiveKey={['1']}
       expandIconPosition="right"
     >
       <Panel header="This is panel header 1" key="1">
