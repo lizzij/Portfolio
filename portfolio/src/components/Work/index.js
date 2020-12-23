@@ -5,15 +5,6 @@ import './styles.css';
 
 const { Panel } = Collapse;
 
-const Project = ({ project }) => {
-  const { header, key, blurb } = project;
-  return (
-    <Panel header={header} key={key}>
-      <p>{blurb}</p>
-    </Panel>
-  );
-}
-
 const Work = () => {
   return (
     <Collapse 
@@ -21,7 +12,14 @@ const Work = () => {
       // defaultActiveKey={['1']}
       expandIconPosition="right"
     >
-      {projects.map((project) => <Project project={project} />)}
+      {projects.map((project) => {
+        const {header, key, blurb} = project;
+        return (
+          <Panel header={header} key={key}>
+            <p>{blurb}</p>
+          </Panel>
+        );
+      })}
   </Collapse>
   );
 }
