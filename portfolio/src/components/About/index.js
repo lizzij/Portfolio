@@ -1,14 +1,16 @@
 import './styles.css';
-import { Row, Col } from 'antd';
+import { Row, Col, Typography } from 'antd';
+
+const { Title } = Typography;
 
 function About() {
   return (
     <Row className="About">
-      <Col align="left" span={18}>I am an undergrad studying <i>Computer Science</i>. 
+      <Col align="left" span={16}>I am an undergrad studying <i>Computer Science</i>. 
     I write code for work and for fun. On the side, I love to draw, write and vlog. 
-    Sometimes I go for swims or long walks with my dog. My pandemic hobby is Kalimba.</Col>
-      <Col align="right" size="large" span={2} offset={4}>
-        Hi!
+    Sometimes I go for swims or long walks with my dog. My pandemic hobby of choice is Kalimba.</Col>
+      <Col align="right" span={4} offset={4}>
+        <Title className="Greeting">Hi!</Title>
       </Col>
     </Row>
   );

@@ -1,0 +1,7 @@
+.Work {
+  text-align: left;
+}
+
+[data-theme="compact"] p, p {
+  margin: 0;
+}

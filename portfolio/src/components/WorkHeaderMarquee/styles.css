@@ -13,10 +13,10 @@
 .WorkHeaderMarquee span {
   display: inline-block;
   will-change: transform;
-  animation: workHeaderMarquee 42s linear infinite;
-  -moz-animation: workHeaderMarquee 42s linear infinite; /* Firefox */
-  -webkit-animation: workHeaderMarquee 42s linear infinite; /* Chrome and Safari */
-  -o-animation: workHeaderMarquee 42s linear infinite; /* Opera */
+  animation: workHeaderMarquee 100s linear infinite;
+  -moz-animation: workHeaderMarquee 100s linear infinite; /* Firefox */
+  -webkit-animation: workHeaderMarquee 100s linear infinite; /* Chrome and Safari */
+  -o-animation: workHeaderMarquee 100s linear infinite; /* Opera */
 }
 
 .WorkHeaderMarquee:hover span {

@@ -12,7 +12,11 @@ const text = `
 
 function Work() {
   return (
-    <Collapse accordion>
+    <Collapse 
+      accordion 
+      defaultActiveKey={['1']}
+      expandIconPosition="right"
+    >
       <Panel header="This is panel header 1" key="1">
         <p>{text}</p>
       </Panel>

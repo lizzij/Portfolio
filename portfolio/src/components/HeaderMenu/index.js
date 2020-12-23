@@ -5,7 +5,7 @@ function HeaderMenu() {
   return (
     <Row className="HeaderMenu">
       <Col align="left" span={8}>
-        <Button type="primary" shape="round" className="homeButton">lizzij</Button>
+        <Button type="primary" shape="round">lizzij</Button>
       </Col>
       <Col span={8}>Eliza/Zijin Huang</Col>
       <Col align="right" span={8}>

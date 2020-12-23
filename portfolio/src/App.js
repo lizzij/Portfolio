@@ -4,6 +4,7 @@ import HeaderMenu from './components/HeaderMenu/index'
 import About from './components/About/index';
 import WorkHeaderMarquee from './components/WorkHeaderMarquee/index';
 import Work from './components/Work/index';
+import Contact from './components/Contact/index';
 import FooterMarquee from './components/FooterMarquee/index';
 
 const { Header, Footer, Content } = Layout;
@@ -23,6 +24,7 @@ function App() {
         </Content>
         
         <Footer className="Footer">
+          <Contact/>
           <FooterMarquee/>
         </Footer>
       </Layout>
