@@ -1,0 +1,59 @@
+.WorkHeaderMarquee {
+  width: 100vw;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-width: 1px 1px 0px 1px;
+  background-color: black;
+  color: white;
+}
+
+.WorkHeaderMarquee span {
+  display: inline-block;
+  will-change: transform;
+  animation: workHeaderMarquee 42s linear infinite;
+  -moz-animation: workHeaderMarquee 42s linear infinite; /* Firefox */
+  -webkit-animation: workHeaderMarquee 42s linear infinite; /* Chrome and Safari */
+  -o-animation: workHeaderMarquee 42s linear infinite; /* Opera */
+}
+
+.WorkHeaderMarquee:hover span {
+  animation-play-state: paused;
+}
+
+.WorkHeaderMarquee:hover span:nth-child(2) {
+  animation-play-state: paused;
+}
+
+@keyframes workHeaderMarquee {
+  0%   {transform: translate(-100%, 0);}
+  100% {transform: translate(0, 0);}
+}
+
+@-moz-keyframes workHeaderMarquee {
+  0%   {-moz-transform: translate(-100%, 0);}
+  100% {-moz-transform: translate(0, 0);}
+}
+
+@-webkit-keyframes workHeaderMarquee {
+  0%   {-webkit-transform: translate(-100%, 0);}
+  100% {-webkit-transform: translate(0, 0);}
+}
+
+@-o-keyframes workHeaderMarquee {
+  0%   {-o-transform: translate(-100%, 0);}
+  100% {-o-transform: translate(0, 0);}
+}
+
+/* Respect user preferences about animations */
+@media (prefers-reduced-motion: reduce) {
+  .WorkHeaderMarquee { 
+    white-space: normal 
+  }
+  .WorkHeaderMarquee span {
+    animation: none;
+    padding-left: 0;
+  }
+}

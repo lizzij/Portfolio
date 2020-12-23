@@ -1,4 +1,4 @@
-.Marquee {
+.FooterMarquee {
   width: 100vw;
   margin: 0;
   white-space: nowrap;
@@ -6,53 +6,53 @@
   box-sizing: border-box;
 }
 
-.Marquee span {
+.FooterMarquee span {
   display: inline-block;
   will-change: transform;
-  animation: marquee 42s linear infinite;
-  -moz-animation: marquee 42s linear infinite; /* Firefox */
-  -webkit-animation: marquee 42s linear infinite; /* Chrome and Safari */
-  -o-animation: marquee 42s linear infinite; /* Opera */
+  animation: footerMarquee 42s linear infinite;
+  -moz-animation: footerMarquee 42s linear infinite; /* Firefox */
+  -webkit-animation: footerMarquee 42s linear infinite; /* Chrome and Safari */
+  -o-animation: footerMarquee 42s linear infinite; /* Opera */
 }
 
 .MinorBlurb {
-  color: red !important;
+  color: black;
 }
 
-.Marquee:hover span {
+.FooterMarquee:hover span {
   animation-play-state: paused;
 }
 
-.Marquee:hover span:nth-child(2) {
+.FooterMarquee:hover span:nth-child(2) {
   animation-play-state: paused;
 }
 
-@keyframes marquee {
+@keyframes footerMarquee {
   0%   {transform: translate(0, 0);}
   100% {transform: translate(-100%, 0);}
 }
 
-@-moz-keyframes marquee {
+@-moz-keyframes footerMarquee {
   0%   {-moz-transform: translate(0, 0);}
   100% {-moz-transform: translate(-100%, 0);}
 }
 
-@-webkit-keyframes marquee {
+@-webkit-keyframes footerMarquee {
   0%   {-webkit-transform: translate(0, 0);}
   100% {-webkit-transform: translate(-100%, 0);}
 }
 
-@-o-keyframes marquee {
+@-o-keyframes footerMarquee {
   0%   {-o-transform: translate(0, 0);}
   100% {-o-transform: translate(-100%, 0);}
 }
 
 /* Respect user preferences about animations */
 @media (prefers-reduced-motion: reduce) {
-  .Marquee { 
+  .FooterMarquee { 
     white-space: normal 
   }
-  .Marquee span {
+  .FooterMarquee span {
     animation: none;
     padding-left: 0;
   }

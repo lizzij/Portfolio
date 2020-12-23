@@ -1,5 +1,6 @@
 import React from 'react';
 import { Collapse } from 'antd';
+import './styles.css';
 
 const { Panel } = Collapse;
 
@@ -19,6 +20,12 @@ function Work() {
         <p>{text}</p>
       </Panel>
       <Panel header="This is panel header 3" key="3">
+        <p>{text}</p>
+      </Panel>
+      <Panel header="This is panel header 4" key="4">
+        <p>{text}</p>
+      </Panel>
+      <Panel header="This is panel header 5" key="5">
         <p>{text}</p>
       </Panel>
   </Collapse>
