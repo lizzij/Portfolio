@@ -28,6 +28,7 @@ const VideoPlayer = ({ videoUrl }) => {
         className='react-player'
         playing 
         loop 
+        mute
         width='100%'
         height='100%'
       />
