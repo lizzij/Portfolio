@@ -1,9 +1,21 @@
 import React from 'react';
-import { Collapse } from 'antd';
+import { Collapse, Row, Col, Button } from 'antd';
 import { projects } from './data.json'
 import './styles.css';
 
 const { Panel } = Collapse;
+
+const Header = ({ title, tags, blurb }) => {
+  return (
+    <Row>
+      <Col align="left" flex="1 1 250px">
+        <b>{title}</b>&nbsp;&nbsp;
+        {tags.map(tag => <Button size="small" shape="round">{tag}</Button>)}
+      </Col>
+      <Col><i>{blurb}</i></Col>
+    </Row>
+  )
+}
 
 const Work = () => {
   return (
@@ -12,11 +24,11 @@ const Work = () => {
       // defaultActiveKey={['1']}
       expandIconPosition="right"
     >
-      {projects.map((project) => {
-        const {header, key, blurb} = project;
+      {projects.map(project => {
+        const {title, key, tags, blurb} = project;
         return (
-          <Panel header={header} key={key}>
-            <p>{blurb}</p>
+          <Panel header={<Header title={title} tags={tags} blurb={blurb}/>} key={key}>
+            <p>Coming soon...</p>
           </Panel>
         );
       })}
