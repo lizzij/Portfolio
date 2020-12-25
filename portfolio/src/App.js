@@ -2,7 +2,6 @@ import './App.less';
 import { Layout } from 'antd';
 import HeaderMenu from './components/HeaderMenu/index'
 import About from './components/About/index';
-import WorkHeaderMarquee from './components/WorkHeaderMarquee/index';
 import Work from './components/Work/index';
 import Contact from './components/Contact/index';
 import FooterMarquee from './components/FooterMarquee/index';
@@ -19,7 +18,6 @@ function App() {
         
         <Content className="Content">
           <About/>
-          <WorkHeaderMarquee/>
           <Work/>
         </Content>
         

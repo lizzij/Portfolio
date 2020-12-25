@@ -2,40 +2,40 @@
   "projects": 
   [
     {
-      "title":"⓪ Hey, That’s My Fish!",
-      "key":"0",
+      "title":"① Hey, That’s My Fish!",
+      "key":"1",
       "tags": ["code"],
       "blurb":"Multi-player online board game writen in Scala."
     },
     {
-      "title":"① Mean Aortic Pressure Forcast",
-      "key":"1",
-      "tags": ["research"],
+      "title":"② Mean Aortic Pressure Forecast",
+      "key":"2",
+      "tags": ["research", "code"],
       "blurb":"Forecast mean aortic blood pressure using deep learning models."
     },
     {
-      "title": "② Notes from NeurIPS 2020",
-      "key": "2",
+      "title": "③ Notes from NeurIPS 2020",
+      "key": "3",
       "tags": ["note"],
       "blurb": "Day 1-7 of NeurIPS 2020 virtual conference."
     },
     {
-      "title": "③ My CS RoadMap for 2021",
-      "key": "3",
+      "title": "④ My CS RoadMap for 2021",
+      "key": "4",
       "tags": ["blog"],
       "blurb": "Planning ahead for next year of learning."
     },
     {
-      "title": "④ Yě Táo Ceramic Studio",
-      "key": "4",
-      "tags": ["design"],
+      "title": "⑤ Yě Táo Ceramic Studio",
+      "key": "5",
+      "tags": ["design", "code"],
       "blurb": "Rebranding and landing page design."
     },
     {
-      "title": "⑤ Portfolio Design Iterations",
-      "key": "5",
+      "title": "⑥ Portfolio Design Iterations",
+      "key": "6",
       "tags": ["design"],
-      "blurb": "Version 1 - 6 of this portfolio."
+      "blurb": "Version 1-6 of this portfolio."
     }
   ]
 }
