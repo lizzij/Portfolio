@@ -1,7 +1,8 @@
 import './styles.css';
 import { Row, Col, Button } from 'antd';
 
-function HeaderMenu() {
+
+const HeaderMenu = () => {
   return (
     <Row className="HeaderMenu">
       <Col align="left" span={6}>

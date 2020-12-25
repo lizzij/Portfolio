@@ -2,7 +2,8 @@ import './styles.css';
 import { Row, Col, Button } from 'antd';
 import { MailOutlined, LinkedinOutlined, GithubOutlined, MediumOutlined, TwitterOutlined, InstagramOutlined, YoutubeOutlined, BehanceOutlined } from '@ant-design/icons';
 
-function Contact() {
+
+const Contact = () => {
   return (
     <Row className="Contact">
       <Col flex="1 1 250px">

@@ -1,9 +1,10 @@
 import './styles.css';
 import { Row, Col, Typography } from 'antd';
 
+
 const { Title } = Typography;
 
-function About() {
+const About = () => {
   return (
     <Row className="About" flex="1 1 250px">
       <Col align="left" span={16}>I am an undergrad studying <i>Computer Science</i>. 

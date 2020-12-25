@@ -5,6 +5,7 @@ import { Collapse, Row, Col, Button } from 'antd';
 import { projects } from './data.json'
 import './styles.css';
 
+
 const { Panel } = Collapse;
 
 const Header = ({ title, tags, blurb }) => {
@@ -46,6 +47,7 @@ const Work = () => {
         className="WorkHeaderPanel"
         header={<WorkHeaderMarquee/>}
         key="0"
+        showArrow={false}
         >
           <VideoPlayer videoUrl={headerVideoUrl} />
       </Panel>
