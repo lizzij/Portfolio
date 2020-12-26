@@ -23,7 +23,7 @@ function App() {
         </Content>
         
         <Footer className="Footer">
-          <Contact/>
+          <Contact id="Contact"/>
           <FooterMarquee/>
         </Footer>
       </Layout>
