@@ -6,12 +6,11 @@
   margin: 0;
 }
 
-.ant-collapse-content-box {
-  padding: 0 !important;
-}
-
 .WorkHeaderPanel > div.ant-collapse-header {
-  padding: 0 !important;
+  padding-left: 0 !important;
+  /* padding-top: 0 !important; */
+  /* padding-bottom: 0 !important; */
+  background-color: black;
 }
 
 .player-wrapper {
