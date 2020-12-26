@@ -13,7 +13,7 @@ const Header = ({ title, tags, blurb }) => {
     <Row>
       <Col align="left" flex="1 1 250px">
         <b>{title}</b>&nbsp;&nbsp;
-        {tags.map(tag => <Button size="small" shape="round">{tag}</Button>)}
+        {tags.map(tag => <Button size="small" shape="round" key={tag}>{tag}</Button>)}
       </Col>
       <Col><i>{blurb}</i></Col>
     </Row>
