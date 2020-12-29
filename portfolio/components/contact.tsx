@@ -7,7 +7,7 @@ const Contact = () => {
       <SectionHeader header="contact" />
       <div className="flex flex-col sm:flex-row md:text-xl">
         <div className="flex-1 mr-4 lg:mr-16 mb-5">
-          Contact me about your project. I am always interested in new opportunies and collaborations.
+          Reach out to talk about your project. I am always interested in new opportunies and collaborations.
         </div>
         <div className="flex-1">
           <div className="flex flex-col">
@@ -21,7 +21,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex-1 -pt-10">
-              <SectionHeader header="links" />
+              <SectionHeader header="connect" />
               Connect with me on&nbsp;
               <Link href="/">
                 <a className="underline font-bold">LinkedIn↗</a>
