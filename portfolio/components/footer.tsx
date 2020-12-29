@@ -3,9 +3,9 @@ import { EXAMPLE_PATH } from '../lib/constants'
 
 const Footer = () => {
   return (
-    <footer className="pt-16 flex justify-around">
+    <footer className="pt-16 flex justify-around text-sm md:text-base">
       <Container>
-        Eliza Huang @ 2021. Built in Next.js + Tailwind CSS.
+        Eliza Huang @ 2021
       </Container>
     </footer>
   )

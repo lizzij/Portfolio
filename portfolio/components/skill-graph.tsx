@@ -119,7 +119,7 @@ const SkillGraph = () => {
   return (
     <div className="overflow-x-hidden flex justify-center -mb-16 md:-mb-12">
       <Graph
-        id="skill-graph"
+        id="skill-graph" // keep this!
         data={data}
         config={config}
         onClickGraph={onClickGraph}

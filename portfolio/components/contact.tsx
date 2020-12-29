@@ -30,7 +30,7 @@ const Contact = () => {
               <Link href="/">
                 <a className="underline font-bold">Github↗</a>
               </Link>
-              &nbsp;to see what I'm up to.<br/>
+              &nbsp;to see what I'm up to recently.<br/>
             </div>
           </div>
         </div>
