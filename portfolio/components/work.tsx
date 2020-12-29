@@ -1,11 +1,10 @@
 import SectionHeader from '../components/section-header'
-import ProjectMenu from '../components/project-menu'
+import GradCountdown from './grad-countdown'
 
 const Projects = () => {
   return (
     <div>
-      <SectionHeader header="experience" />
-      <ProjectMenu />
+      <SectionHeader header="projects" />
     </div>
   )
 }
@@ -26,21 +25,13 @@ const Coursework = () => {
   )
 }
 
-const Countdown = () => {
-  return (
-    <div>
-      <SectionHeader header="countdown" />
-    </div>
-  )
-}
-
 const Work = () => {
   return (
     <div>
       <Projects />
       <Experience />
       <Coursework />      
-      <Countdown />
+      <GradCountdown />
     </div>
   )
 }
