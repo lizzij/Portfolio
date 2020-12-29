@@ -1,29 +1,7 @@
-import SectionHeader from '../components/section-header'
 import GradCountdown from './grad-countdown'
-
-const Projects = () => {
-  return (
-    <div>
-      <SectionHeader header="projects" />
-    </div>
-  )
-}
-
-const Experience = () => {
-  return (
-    <div>
-      <SectionHeader header="experience" />
-    </div>
-  )
-}
-
-const Coursework = () => {
-  return (
-    <div>
-      <SectionHeader header="coursework" />
-    </div>
-  )
-}
+import Coursework from './coursework'
+import Experience from './experience'
+import Projects from './projects'
 
 const Work = () => {
   return (

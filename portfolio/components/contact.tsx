@@ -6,7 +6,7 @@ const Contact = () => {
     <div>
       <SectionHeader header="contact" />
       <div className="flex flex-col sm:flex-row md:text-xl">
-        <div className="flex-1 pr-10 mb-5">
+        <div className="flex-1 mr-4 lg:mr-16 mb-5">
           Contact me about your project. I am always interested in new opportunies and collaborations.
         </div>
         <div className="flex-1">
