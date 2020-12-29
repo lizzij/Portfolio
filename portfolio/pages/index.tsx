@@ -3,8 +3,8 @@ import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Intro from '../components/intro'
 import SkillGraph from '../components/skill-graph'
-import ProjectMenu from '../components/project-menu'
-import SectionHeader from '../components/section-header'
+import Work from '../components/work'
+import Contact from '../components/contact'
 import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
@@ -26,9 +26,9 @@ const Index = ({ allPosts }: Props) => {
         <Container>
           <Intro />
           <SkillGraph />
-          <SectionHeader header="work" />
-          <ProjectMenu />
-          {heroPost && (
+          <Work />
+          <Contact />
+          {/* {heroPost && (
             <HeroPost
               title={heroPost.title}
               coverImage={heroPost.coverImage}
@@ -38,7 +38,7 @@ const Index = ({ allPosts }: Props) => {
               excerpt={heroPost.excerpt}
             />
           )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+          {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
         </Container>
       </Layout>
     </>

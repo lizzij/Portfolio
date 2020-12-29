@@ -6,13 +6,13 @@ type Props = {
 
 const SectionHeader = ({header}: Props) => {
   return (
-    <div>
-      <div className="grid grid-cols-1 divide-y-2 divide-black">
+    <div className="mt-32 md:mt-24 mb-10 md:mb-12">
+      <div className="grid grid-cols-1 divide-y-2 divide-black ml-5">
         <div></div>
         <div>
           <div className="relative -m-px">
             <div className="absolute -m-px">
-              <button className="flex-none bg-white text-black font-bold md:text-2xl py-0 px-2 border-2 border-black rounded-full focus:outline-none">
+              <button className="flex-none bg-white text-black font-bold md:text-2xl py-0 px-2 -ml-5 border-2 border-black rounded-full focus:outline-none">
                 {header}
               </button>  
             </div>
