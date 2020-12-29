@@ -9,7 +9,7 @@ const Button = ({dark, text}: Props) => {
     <button className="flex-none bg-black text-white font-bold md:text-2xl py-0 px-2 border-2 border-black rounded-full focus:outline-none">
       {text}
     </button> :
-    <button className="bg-white hover:bg-black text-black hover:text-white font-bold md:text-2xl py-0 px-2 border-2 border-black rounded-full focus:outline-none">
+    <button className="-top-20 bg-white hover:bg-black text-black hover:text-white font-bold md:text-2xl py-0 px-2 border-2 border-black rounded-full focus:outline-none">
       {text}
     </button>
   )

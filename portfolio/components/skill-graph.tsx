@@ -117,7 +117,7 @@ const onZoomChange = function(previousZoom: number, newZoom: number) {
 
 const SkillGraph = () => {
   return (
-    <div className="overflow-x-hidden flex justify-center">
+    <div className="overflow-x-hidden flex justify-center mb-16 md:mb-12">
       <Graph
         id="skill-graph"
         data={data}
