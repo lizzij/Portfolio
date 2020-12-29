@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { Graph } from 'react-d3-graph'
 
 const data = {
@@ -43,32 +42,12 @@ const data = {
   ],
 };
 
-function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
-}
-
-function useWindowDimensions() {
-  const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowDimensions(getWindowDimensions());
-    }
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  return windowDimensions;
-}
-
 const config = {
-  height: 500,
-  width: 500,
+  height: 360,
+  width: 1280,
+  d3: {
+    linkLength: 64,
+  },
   nodeHighlightBehavior: true,
   node: {
     color: "black",
@@ -138,23 +117,25 @@ const onZoomChange = function(previousZoom: number, newZoom: number) {
 
 const SkillGraph = () => {
   return (
-    <Graph
-      id="skill-graph"
-      data={data}
-      config={config}
-      onClickGraph={onClickGraph}
-      onClickNode={onClickNode}
-      onDoubleClickNode={onDoubleClickNode}
-      onRightClickNode={onRightClickNode}
-      onClickLink={onClickLink}
-      onRightClickLink={onRightClickLink}
-      onMouseOverNode={onMouseOverNode}
-      onMouseOutNode={onMouseOutNode}
-      onMouseOverLink={onMouseOverLink}
-      onMouseOutLink={onMouseOutLink}
-      onNodePositionChange={onNodePositionChange}
-      onZoomChange={onZoomChange}
-    />
+    <div className="overflow-x-hidden flex justify-center">
+      <Graph
+        id="skill-graph"
+        data={data}
+        config={config}
+        onClickGraph={onClickGraph}
+        onClickNode={onClickNode}
+        onDoubleClickNode={onDoubleClickNode}
+        onRightClickNode={onRightClickNode}
+        onClickLink={onClickLink}
+        onRightClickLink={onRightClickLink}
+        onMouseOverNode={onMouseOverNode}
+        onMouseOutNode={onMouseOutNode}
+        onMouseOverLink={onMouseOverLink}
+        onMouseOutLink={onMouseOutLink}
+        onNodePositionChange={onNodePositionChange}
+        onZoomChange={onZoomChange}
+      />
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import Button from './button'
 
 const Menu = () => {
   return (
-    <nav className="flex flex-row px-5 py-10">
+    <nav className="flex flex-row p-4 lg:p-16">
       <a href="/">
         <Button dark text="lizzij" />
       </a>
