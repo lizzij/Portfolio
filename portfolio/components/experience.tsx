@@ -4,14 +4,14 @@ const Experience = () => {
   return (
     <div>
       <SectionHeader header="experience" />
-      <div className="flex flex-wrap place-content-between">
-        <div className="flex-1 mr-4 lg:mr-16 bg-gray-200">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-16">
+        <div className="bg-gray-200 rounded-2xl md:rounded-3xl p-4">
           <div>1</div>
-          <div>2</div>
+          <div>Donec vel iaculis neque. Quisque semper sapien in justo convallis, ac consequat risus pellentesque. Vestibulum porttitor mauris eget tempus ullamcorper. Ut varius</div>
         </div>
-        <div className="flex-1 bg-gray-200">
+        <div className="bg-gray-200 rounded-2xl md:rounded-3xl p-4">
           <div>1</div>
-          <div>2</div>
+          <div>Donec vel iaculis neque. Quisque semper sapien in justo convallis, ac consequat risus pellentesque. Vestibulum porttitor mauris eget tempus ullamcorper. Ut varius</div>
         </div>
       </div>
     </div>
