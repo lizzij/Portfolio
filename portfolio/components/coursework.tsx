@@ -20,7 +20,7 @@ const Coursework = () => {
           <div></div>
         </div>
         <div className="grid grid-cols-1 divide-y divide-black">
-          <div>Artificial Intelligence (grad)</div>
+          <div>Artificial Intelligence (Grad)</div>
           <div>Natural Language Processing</div>
           <div>Robotic Science &amp; Systems</div>
           <div>Data Collection &amp; Analysis</div>

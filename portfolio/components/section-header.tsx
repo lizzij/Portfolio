@@ -6,7 +6,7 @@ type Props = {
 
 const SectionHeader = ({header}: Props) => {
   return (
-    <div className="mt-32 mb-10 lg:mb-16">
+    <div className="mt-32 mb-10 md:mb-16">
       <div className="grid grid-cols-1 divide-y-2 divide-black ml-5">
         <div></div>
         <div>
