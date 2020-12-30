@@ -3,12 +3,14 @@ import ProjectPreview from './project-preview'
 import Project from '../types/project'
 
 type Props = {
+  ready?: boolean
   projects: Project[]
 }
 
-const Projects = ({ projects }: Props) => {
+const Projects = ({ ready = false, projects }: Props) => {
   return (
-    <div>
+    ready ? 
+    <div id="work">
       <SectionHeader header="projects" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
         {projects.map((project) => (
@@ -23,6 +25,11 @@ const Projects = ({ projects }: Props) => {
           />
         ))}
       </div>
+    </div>
+    :
+    <div id="work">
+      <SectionHeader header="projects" />
+      <div>Coming soon...</div>
     </div>
   )
 }

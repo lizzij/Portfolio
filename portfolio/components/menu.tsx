@@ -7,8 +7,12 @@ const Menu = () => {
         <Button dark text="lizzij" />
       </a>
       <div className="flex-grow"></div>
-        <Button text="work" />
-        <Button text="contact" />
+        <a href="#work">
+          <Button text="work" />
+        </a>
+        <a href="#contact">
+          <Button dark text="contact" />
+        </a>
     </nav>
   )
 }

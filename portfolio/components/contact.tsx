@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div>
+    <div id="contact">
       <SectionHeader header="contact" />
       <div className="flex flex-col sm:flex-row md:text-xl">
         <div className="flex-1 mr-4 lg:mr-16 mb-5">
