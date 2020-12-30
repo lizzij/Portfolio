@@ -1,22 +1,19 @@
 import Container from '../components/container'
-import MoreStories from '../components/more-stories'
-import HeroPost from '../components/hero-post'
+import Projects from '../components/projects'
 import Intro from '../components/intro'
 import SkillGraph from '../components/skill-graph'
 import Work from '../components/work'
 import Contact from '../components/contact'
 import Layout from '../components/layout'
-import { getAllPosts } from '../lib/api'
+import { getAllProjects } from '../lib/api'
 import Head from 'next/head'
-import Post from '../types/post'
+import Project from '../types/project'
 
 type Props = {
-  allPosts: Post[]
+  allProjects: Project[]
 }
 
-const Index = ({ allPosts }: Props) => {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+const Index = ({ allProjects }: Props) => {
   return (
     <>
       <Layout>
@@ -28,17 +25,7 @@ const Index = ({ allPosts }: Props) => {
           <SkillGraph />
           <Work />
           <Contact />
-          {/* {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />} */}
+          <Projects projects={allProjects} />
         </Container>
       </Layout>
     </>
@@ -48,7 +35,7 @@ const Index = ({ allPosts }: Props) => {
 export default Index
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
+  const allProjects = getAllProjects([
     'title',
     'date',
     'slug',
@@ -58,6 +45,6 @@ export const getStaticProps = async () => {
   ])
 
   return {
-    props: { allPosts },
+    props: { allProjects },
   }
 }

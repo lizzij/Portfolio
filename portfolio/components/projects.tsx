@@ -1,6 +1,12 @@
 import SectionHeader from '../components/section-header'
+import ProjectPreview from './project-preview'
+import Project from '../types/project'
 
-const Projects = () => {
+type Props = {
+  projects: Project[]
+}
+
+const Projects = ({ projects }: Props) => {
   return (
     <div>
       <SectionHeader header="projects" />
@@ -15,6 +21,19 @@ const Projects = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum leo eget quam faucibus, in feugiat magna fermentum. Nam pretium convallis urna, eu volutpat velit elementum non. Quisque convallis nisi vitae neque accumsan, faucibus pretium magna mattis. Nunc tristique elit quis mi facilisis interdum. Suspendisse enim mi, sodales posuere facilisis ornare, volutpat at purus. Suspendisse ac metus sed dui dapibus iaculis vitae ut nunc. Suspendisse scelerisque mauris at ipsum imperdiet pulvinar. Sed vitae interdum leo. Donec lacinia felis sed magna tristique, nec varius erat ullamcorper. Sed sit amet blandit ante. Etiam sodales posuere leo sed finibus. Duis sed massa vel mi ornare accumsan ac a neque.
           Donec vel iaculis neque. Quisque semper sapien in justo convallis, ac consequat risus pellentesque. Vestibulum porttitor mauris eget tempus ullamcorper. Ut varius congue condimentum. Pellentesque venenatis sed purus in maximus. Cras in nisi nec tellus suscipit posuere fermentum eu dolor. Fusce porta iaculis lectus et gravida.
         </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:col-gap-16 lg:col-gap-32 row-gap-20 md:row-gap-32 mb-32">
+        {projects.map((project) => (
+          <ProjectPreview
+            key={project.slug}
+            title={project.title}
+            coverImage={project.coverImage}
+            date={project.date}
+            author={project.author}
+            slug={project.slug}
+            excerpt={project.excerpt}
+          />
+        ))}
+      </div>
       </div>
     </div>
   )
