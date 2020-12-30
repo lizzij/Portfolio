@@ -38,6 +38,7 @@ const Project = ({ project }: Props) => {
               <ProjectHeader
                 title={project.title}
                 date={project.date}
+                tags={project.tags}
               />
               <ProjectBody content={project.content} />
             </article>

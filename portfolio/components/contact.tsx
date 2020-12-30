@@ -24,11 +24,11 @@ const Contact = () => {
               <SectionHeader header="connect" />
               Connect with me on&nbsp;
               <Link href="/">
-                <a className="hover:underline font-bold">LinkedIn↗</a>
+                <a className="underline font-bold">LinkedIn↗</a>
               </Link>
               &nbsp;and&nbsp;
               <Link href="/">
-                <a className="hover:underline font-bold">Github↗</a>
+                <a className="underline font-bold">Github↗</a>
               </Link>
               &nbsp;to see what I'm up to recently.<br/>
             </div>

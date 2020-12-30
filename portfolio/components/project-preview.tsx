@@ -29,7 +29,7 @@ const ProjectPreview = ({
           style={{backgroundImage: `url(${coverImage})`}} 
           >
           <div className="bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
-            <h3 className="text-white md:text-xl md:pb-1 hover:underline">{title}</h3>
+            <h3 className="text-white md:text-xl md:pb-1">{title}</h3>
             <div className="text-gray-400 md:pb-1">
               <DateFormatter dateString={date} />
               {tags.split(" ").map(tag => <Button dark tag text={tag} />)}
