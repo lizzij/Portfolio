@@ -21,7 +21,7 @@ const ProjectPreview = ({
   slug,
 }: Props) => {
   return (
-    <div>
+    <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
         <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
           <div className="mb-5">
