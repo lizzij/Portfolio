@@ -25,10 +25,11 @@ const ProjectPreview = ({
     <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
         <div 
-          className="bg-auto bg-no-repeat bg-center rounded-2xl md:rounded-3xl p-4"
+          className="h-card bg-cover bg-center bg-no-repeat bg-center rounded-2xl md:rounded-3xl p-4"
           style={{backgroundImage: `url(${coverImage})`}} 
           >
-          <div className="bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
+          <div className="h-gap"></div>
+          <div className="flex flex-col justify-end h-blurb bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
             <h3 className="text-white md:text-xl md:pb-1">{title}</h3>
             <div className="text-gray-400 md:pb-1">
               <DateFormatter dateString={date} />
