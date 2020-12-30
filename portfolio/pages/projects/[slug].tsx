@@ -2,7 +2,6 @@ import { useRouter } from 'next/router'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import ProjectBody from '../../components/project-body'
-import Header from '../../components/header'
 import ProjectHeader from '../../components/project-header'
 import Layout from '../../components/layout'
 import { getProjectBySlug, getAllProjects } from '../../lib/api'
@@ -23,7 +22,6 @@ const Project = ({ project }: Props) => {
   return (
     <Layout>
       <Container>
-        <Header />
         {router.isFallback ? (
           <ProjectTitle>Loading…</ProjectTitle>
         ) : (

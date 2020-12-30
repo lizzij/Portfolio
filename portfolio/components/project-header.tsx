@@ -15,7 +15,7 @@ const ProjectHeader = ({ title, date, tags}: Props) => {
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />
-          {tags.split(" ").map(tag => <Button tag text={tag} />)}
+          {tags.split(" ").map(tag => <Button tag text={tag} key={tag} />)}
         </div>
       </div>
     </>
