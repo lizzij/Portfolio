@@ -24,16 +24,18 @@ const ProjectPreview = ({
   return (
     <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
-        <div className="bg-faded rounded-2xl md:rounded-3xl p-4"
-          style={{
-          backgroundImage: `url(${coverImage})`,
-        }} >
-          <h3 className="md:text-xl md:pb-1 hover:underline">{title}</h3>
-          <div className="text-gray-600 md:pb-1">
-            <DateFormatter dateString={date} />
-            {tags.split(" ").map(tag => <Button tag text={tag} />)}
+        <div 
+          className="bg-auto bg-no-repeat bg-center rounded-2xl md:rounded-3xl p-4"
+          style={{backgroundImage: `url(${coverImage})`}} 
+          >
+          <div className="bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
+            <h3 className="text-white md:text-xl md:pb-1 hover:underline">{title}</h3>
+            <div className="text-gray-400 md:pb-1">
+              <DateFormatter dateString={date} />
+              {tags.split(" ").map(tag => <Button dark tag text={tag} />)}
+            </div>
+            <p className="text-gray-500">{excerpt}</p>
           </div>
-          <p className="text-gray-500">{excerpt}</p>
         </div>
       </Link>
     </div>

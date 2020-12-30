@@ -11,10 +11,11 @@ const Button = ({dark = false, tag = false, text}: Props) => {
   const bgColor = tag ? "transparent" : (dark ? "black" : "white")
   const color = dark ? "black" : "white"
   const contrastColor = dark ? "white" : "black"
+  const borderColor = tag ? "white hover:border-black" : "black"
 
   return (
     <button className={`bg-${bgColor} hover:bg-${contrastColor} text-${contrastColor} hover:text-${color} 
-    ${fontSize} py-0 px-${gap} ml-${gap} border${borderWidth} border-black rounded-full focus:outline-none`}>
+    ${fontSize} py-0 px-${gap} ml-${gap} border${borderWidth} border-${borderColor} rounded-full focus:outline-none`}>
       {text}
     </button>
   )
