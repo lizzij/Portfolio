@@ -27,13 +27,15 @@ const ProjectPreview = ({
           <div className="mb-5">
             <CoverImage slug={slug} title={title} src={coverImage} />
           </div>
-          <h3>
-            {title}
+          <h3 className="md:text-xl md:pb-1">
+            <Link as={`/projects/${slug}`} href="/projects/[slug]">
+              <a className="hover:underline">{title}</a>
+            </Link>
           </h3>
-          <div className="text-lg mb-4">
+          <div className="text-gray-600 md:pb-1">
             <DateFormatter dateString={date} />
           </div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <p className="text-gray-500">{excerpt}</p>
         </div>
       </Link>
     </div>
