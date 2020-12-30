@@ -21,7 +21,7 @@ const Experience = () => {
           <div className="text-gray-500">
             I worked as a full-stack intern on the tooling team. 
             I developed a web-based analysis tool to search and annotate a particular type of 
-            genetic variants that causes rare diseases, 
+            genetic variants that causes rare diseases. 
             During the process, I took design and implementation feedbacks from domain scientists iteratively.
           </div>
         </div>
