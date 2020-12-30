@@ -5,7 +5,7 @@ const Experience = () => {
     <div>
       <SectionHeader header="experience" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
-        <div className="bg-faded rounded-2xl md:rounded-3xl p-4">
+        <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
           <div className="md:text-xl md:pb-1">Software Engineer Coop at Harvard Catalyst</div>
           <div className="text-gray-600 md:pb-1">2020.6 - 2020.12</div>
           <div className="text-gray-500">
@@ -15,7 +15,7 @@ const Experience = () => {
             in a software that shares patient information across hospital network.
           </div>
         </div>
-        <div className="bg-faded rounded-2xl md:rounded-3xl p-4">
+        <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
           <div className="md:text-xl md:pb-1">Software Engineer Coop at Broad Institute</div>
           <div className="text-gray-600 md:pb-1">2019.6 - 2019.12</div>
           <div className="text-gray-500">
