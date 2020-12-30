@@ -23,16 +23,16 @@ const ProjectPreview = ({
   return (
     <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
-        <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
+        <div className="bg-gradient-to-t from-black to-gray-200 rounded-2xl md:rounded-3xl p-4">
           <div className="mb-5">
             <CoverImage slug={slug} title={title} src={coverImage} />
           </div>
           <h3 className="md:text-xl md:pb-1">
             <Link as={`/projects/${slug}`} href="/projects/[slug]">
-              <a className="hover:underline">{title}</a>
+              <a className="hover:underline text-white">{title}</a>
             </Link>
           </h3>
-          <div className="text-gray-600 md:pb-1">
+          <div className="text-gray-400 md:pb-1">
             <DateFormatter dateString={date} />
           </div>
           <p className="text-gray-500">{excerpt}</p>
