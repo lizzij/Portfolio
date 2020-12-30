@@ -1,15 +1,19 @@
 type Props = {
-  dark: boolean,
+  dark?: boolean,
+  tag?: boolean,
   text: string
 }
 
-const Button = ({dark, text}: Props) => {
+const Button = ({dark = false, tag = false, text}: Props) => {
+  const fontSize = tag ? "" : "font-bold md:text-2xl"
+  const borderWidth = tag ? "" : "-2"
+  const gap = tag ? "2" : "3"
+  const color = tag ? "transparent" : (dark ? "black" : "white")
+  const contrastColor = dark ? "white" : "black"
+
   return (
-    dark ?
-    <button className="flex-none bg-black text-white font-bold md:text-2xl py-0 px-3 border-2 border-black rounded-full focus:outline-none">
-      {text}
-    </button> :
-    <button className="bg-white hover:bg-black text-black hover:text-white font-bold md:text-2xl py-0 px-3 border-2 border-black rounded-full focus:outline-none">
+    <button className={`bg-${color} hover:bg-${contrastColor} text-${contrastColor} hover:text-${color} 
+    ${fontSize} py-0 px-${gap} ml-${gap} border${borderWidth} border-black rounded-full focus:outline-none`}>
       {text}
     </button>
   )
