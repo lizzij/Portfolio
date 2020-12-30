@@ -20,14 +20,14 @@ const ProjectPreview = ({
   slug,
   tags,
 }: Props) => {
-  console.log("tags", tags)
+  console.log("coverImage", coverImage)
   return (
     <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
-        <div className="bg-faded rounded-2xl md:rounded-3xl p-4">
-          <div className="mb-5">
-            <CoverImage slug={slug} title={title} src={coverImage} />
-          </div>
+        <div className="bg-faded rounded-2xl md:rounded-3xl p-4"
+          style={{
+          backgroundImage: `url(${coverImage})`,
+        }} >
           <h3 className="md:text-xl md:pb-1 hover:underline">{title}</h3>
           <div className="text-gray-600 md:pb-1">
             <DateFormatter dateString={date} />
