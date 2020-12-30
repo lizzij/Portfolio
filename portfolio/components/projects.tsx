@@ -17,9 +17,9 @@ const Projects = ({ projects }: Props) => {
             title={project.title}
             coverImage={project.coverImage}
             date={project.date}
-            author={project.author}
             slug={project.slug}
             excerpt={project.excerpt}
+            tags={project.tags}
           />
         ))}
       </div>

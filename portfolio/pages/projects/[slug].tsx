@@ -37,9 +37,7 @@ const Project = ({ project }: Props) => {
               </Head>
               <ProjectHeader
                 title={project.title}
-                coverImage={project.coverImage}
                 date={project.date}
-                author={project.author}
               />
               <ProjectBody content={project.content} />
             </article>
@@ -63,10 +61,10 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
     'content',
     'ogImage',
     'coverImage',
+    'tags',
   ])
   const content = await markdownToHtml(project.content || '')
 
