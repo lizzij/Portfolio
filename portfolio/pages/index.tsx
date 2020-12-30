@@ -2,7 +2,7 @@ import Container from '../components/container'
 import Projects from '../components/projects'
 import Intro from '../components/intro'
 import SkillGraph from '../components/skill-graph'
-import Work from '../components/work'
+import About from '../components/about'
 import Contact from '../components/contact'
 import Layout from '../components/layout'
 import { getAllProjects } from '../lib/api'
@@ -23,9 +23,9 @@ const Index = ({ allProjects }: Props) => {
         <Container>
           <Intro />
           <SkillGraph />
-          <Work />
-          <Contact />
           <Projects projects={allProjects} />
+          <About />
+          <Contact />
         </Container>
       </Layout>
     </>

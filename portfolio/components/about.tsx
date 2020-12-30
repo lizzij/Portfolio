@@ -2,7 +2,7 @@ import GradCountdown from './grad-countdown'
 import Coursework from './coursework'
 import Experience from './experience'
 
-const Work = () => {
+const About = () => {
   return (
     <div>
       <Experience />
@@ -12,4 +12,4 @@ const Work = () => {
   )
 }
 
-export default Work
+export default About
