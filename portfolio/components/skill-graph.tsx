@@ -1,5 +1,7 @@
 import { Graph } from 'react-d3-graph'
 
+type config = object
+
 const data = {
   nodes: [
     { id: "Python", size: 300 }, { id: "Django" }, { id: "Flask" }, { id: "Pandas" }, { id: "TensorFlow" }, { id: "PyTorch" },
@@ -121,19 +123,7 @@ const SkillGraph = () => {
       <Graph
         id="skill-graph" // keep this!
         data={data}
-        config={config}
-        onClickGraph={onClickGraph}
-        onClickNode={onClickNode}
-        onDoubleClickNode={onDoubleClickNode}
-        onRightClickNode={onRightClickNode}
-        onClickLink={onClickLink}
-        onRightClickLink={onRightClickLink}
-        onMouseOverNode={onMouseOverNode}
-        onMouseOutNode={onMouseOutNode}
-        onMouseOverLink={onMouseOverLink}
-        onMouseOutLink={onMouseOutLink}
-        onNodePositionChange={onNodePositionChange}
-        onZoomChange={onZoomChange}
+        // config={config}
       />
     </div>
   )
