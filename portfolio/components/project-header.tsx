@@ -1,5 +1,4 @@
 import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
 import ProjectTitle from './project-title'
 import Author from '../types/author'
 
