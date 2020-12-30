@@ -31,7 +31,7 @@ const Project = ({ project }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>
-                  {project.title} | Next.js Blog Example with Markdown
+                  Eliza Zijin Huang's Portfolio - code, research, blog and more.
                 </title>
                 <meta property="og:image" content={project.ogImage.url} />
               </Head>
