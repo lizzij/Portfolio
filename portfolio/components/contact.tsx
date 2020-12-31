@@ -15,21 +15,19 @@ const Contact = () => {
               Eliza Zijin Huang<br/>
               elizazijinhuang@gmail.com<br/>
               <div className="mt-2 pd">
-                <button className="flex-none bg-black text-white font-bold md:text-2xl py-1 px-10 border-2 border-black rounded-full focus:outline-none">
-                  Get in Touch ➔
-                </button>
+                <a href="https://forms.gle/ybdt9NMpJgYnJKTt8" rel="noopener noreferrer" target="_blank">
+                  <button className="flex-none bg-black text-white font-bold md:text-2xl py-1 px-10 border-2 border-black rounded-full focus:outline-none">
+                    Get in Touch ➔
+                  </button>
+                </a>
               </div>
             </div>
             <div className="flex-1 -pt-10">
               <SectionHeader header="connect" />
               Connect with me on&nbsp;
-              <Link href="/">
-                <a className="underline font-bold">LinkedIn↗</a>
-              </Link>
+              <a className="underline font-bold" href="https://www.linkedin.com/in/lizzij/" rel="noopener noreferrer" target="_blank">LinkedIn↗</a>
               &nbsp;and&nbsp;
-              <Link href="/">
-                <a className="underline font-bold">Github↗</a>
-              </Link>
+              <a className="underline font-bold" href="https://github.com/lizzij" rel="noopener noreferrer" target="_blank">Github↗</a>
               &nbsp;to see what I'm up to recently.<br/>
             </div>
           </div>

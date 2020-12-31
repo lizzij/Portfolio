@@ -4,14 +4,18 @@ type Props = {
   title: string
   src: string
   slug?: string
+  width: number
+  height: number
 }
 
-const CoverImage = ({ title, src, slug }: Props) => {
+const CoverImage = ({ title, src, slug, width, height }: Props) => {
   const image = (
     <img
       src={src}
       alt={`Cover Image for ${title}`}
       className="rounded-2xl md:rounded-3xl"
+      width={width}
+      height={height}
     />
   )
   return (
