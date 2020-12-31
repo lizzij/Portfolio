@@ -19,7 +19,6 @@ const ProjectPreview = ({
   slug,
   tags,
 }: Props) => {
-  console.log("coverImage", coverImage)
   return (
     <div className="self-end">
       <Link as={`/projects/${slug}`} href="/projects/[slug]">
