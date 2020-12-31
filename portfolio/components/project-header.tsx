@@ -1,6 +1,6 @@
 import DateFormatter from './date-formatter'
 import ProjectTitle from './project-title'
-import Button from './button'
+import Button from './tag'
 
 type Props = {
   title: string

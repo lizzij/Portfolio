@@ -1,6 +1,5 @@
 import DateFormatter from './date-formatter'
-import CoverImage from './cover-image'
-import Button from './button'
+import Tag from './tag'
 import Link from 'next/link'
 
 type Props = {
@@ -33,7 +32,7 @@ const ProjectPreview = ({
             <h3 className="text-white md:text-xl md:pb-1">{title}</h3>
             <div className="text-gray-400 md:pb-1">
               <DateFormatter dateString={date} />
-              {tags.split(" ").map(tag => <Button dark tag text={tag}  key={tag} />)}
+              {tags.split(" ").map(tag => <Tag dark text={tag} key={tag} />)}
             </div>
             <p className="text-gray-500">{excerpt}</p>
           </div>

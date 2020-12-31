@@ -1,5 +1,3 @@
-import Button from '../components/button'
-
 type Props = {
   header: string
 }
