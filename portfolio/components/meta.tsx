@@ -35,6 +35,8 @@ const Meta = () => {
         name="description"
         content={`Eliza Zijin Huang's Portfolio - code, research, blog and more.`}
       />
+      <meta property="og:title" content="Eliza's Portfolio" />
+      <meta property="og:description" content="Eliza/Zijin Huang's porfolio - code, research, blog and more." />    
       <meta property="og:image" content="/favicon/preview.png" />
     </Head>
   )
