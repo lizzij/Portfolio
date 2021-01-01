@@ -29,7 +29,7 @@ const ProjectPreview = ({
               <h3 className="text-white text-lg md:text-xl pb-1">
                 {title}
               </h3>
-              <div className="lg:pt-0.5">
+              <div>
                 {tags.split(" ").map(tag => <Tag dark text={tag} key={tag} />)}
               </div>
             </div>
