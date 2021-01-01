@@ -26,9 +26,9 @@ const ProjectPreview = ({
           <div className="h-gap"></div>
           <div className="flex flex-col justify-end h-blurb bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
             <div className="flex flex-wrap">
-              <h3 className="text-white text-lg md:text-xl pb-1">
+              <h1 className="text-white text-lg md:text-xl pb-1">
                 {title}
-              </h3>
+              </h1>
               <div>
                 {tags.split(" ").map(tag => <Tag dark text={tag} key={tag} />)}
               </div>
