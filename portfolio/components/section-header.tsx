@@ -10,7 +10,7 @@ const SectionHeader = ({header}: Props) => {
         <div>
           <div className="relative -m-px">
             <div className="absolute -m-px">
-              <button className="flex-none bg-white text-black font-bold md:text-2xl py-0 px-2 -ml-5 border-2 border-black rounded-full focus:outline-none">
+              <button className="flex-none bg-white text-black font-bold md:text-2xl py-0 px-3 -ml-5 border-2 border-black rounded-full focus:outline-none">
                 {header}
               </button>  
             </div>
