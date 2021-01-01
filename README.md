@@ -5,6 +5,8 @@ This is my personal site showcasing projects, experience, blog and more. It uses
 ## Demo
 
 [lizzij.me](https://lizzij.me/)
+![](./assets/lighthouse.mov)
+
 
 ## Usage
 
