@@ -28,8 +28,8 @@ const ProjectPreview = ({
           >
           <div className="h-gap"></div>
           <div className="flex flex-col justify-end h-blurb bg-gradient-to-t from-black to-transparent rounded-2xl md:rounded-3xl -m-4 p-4">
-            <h3 className="text-white md:text-xl md:pb-1">{title}</h3>
-            <div className="text-gray-400 md:pb-1">
+            <h3 className="text-white text-lg md:text-xl pb-1">{title}</h3>
+            <div className="text-gray-400 pb-1">
               <DateFormatter dateString={date} />
               {tags.split(" ").map(tag => <Tag dark text={tag} key={tag} />)}
             </div>

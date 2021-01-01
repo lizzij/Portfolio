@@ -1,17 +1,43 @@
 ---
-title: 'Neurips'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+title: 'NeurIPS 2020'
+excerpt: 'Takeaways from 2020 Virtual-only Conference on Neural Information Processing Systems. I participated in expo, sessions, tutorials and workshops.'
 coverImage: '/assets/project/neurips/cover.jpg'
 date: '2020-12-12T05:35:07.322Z'
 ogImage:
   url: '/assets/project/neurips/cover.jpg'
 tags: 'note ml'
+index: 3
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+Status: in progress.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+- **Day 1: [Expo](https://neurips.cc/Expo/Conferences/2020/Expo)**
+  - Challenges in the adoption of Machine Learning in Health Care [Amazon science]
+    - Challenges includes data accessibility, HIPPA & stateless service, variance across subdomains, solutions vary depending on the provider settings, abbreviation and typos in unstructured clinical text
+    - Amazon Comprehend Medical
+      - active learning (data annotations hards vs data hungry DL systems), computational expensive (CNN-CNN-LSTM architecture)
+      - transfer leaning (typos in unstructured data, diverse subdomain) - named entity recognition (NER), parameter sharing (hard sharing and loosely coupled parameter soft sharing with Tunable Transfer Network (TNN)), dynamic transfer learning
+      - continual learning (time-sensitive data, more data for diversity) - evolve to new data set but maintain quality, also across ontology, multi domain pre-training (catastrophic forgetting mitigated by elastic weight consolidation and learning rate control + experience replay)
+      - Applications: CORD-19, transcribe medical + comprehend medical, multi modal knowledge extraction, mortality risk prediction
+  - How we leverage machine learning and AI to develop life-changing medicines - a case study with COVID-19 [Benevolent AI]
+  - AI against COVID-19 at IBM Research [IBM]
+  - Fairness, Explainability, and Privacy in AI/ML Systems [Amazon science]
+  - Modern ML Meets Financial Markets: Insights and Challenges [Hudson River Trading AI Labs]
+  - Hypotheses Generation for Applications in Biomedicine and Gastronomy [SONY]
+  - Accelerating Eye Movement Research Via Smartphone Gaze [Google Research]
+  - New Challenges in User-Generated Content [Alibaba Group]
+  - Machine Learning for All-Inclusive Finance [Ant Group & Alipay]
+  - Medical Transcription Analysis [Amazon science]
+  - Discovering genetic medicines using the Deep Genomics AI Drug Discovery Platform [Deep Genomics]
 
-## Lorem Ipsum
+- **Day 2: [Tutorials](https://neurips.cc/virtual/2020/protected/e_tutorials.html)**,  **Session 1** - [Keynote](https://neurips.cc/virtual/2020/protected/invited_16166.html) + Tracks ([Representation/Relational](https://neurips.cc/virtual/2020/protected/session_oral_21099.html), [COVID/Health/Bio Applications](https://www.google.com/url?q=https://neurips.cc/virtual/2020/protected/session_oral_21094.html&source=gmail&ust=1607607028441000&usg=AFQjCNECADzSDBeKKLl44QHUkyoZUAhY_g), [Language/Audio Applications](https://neurips.cc/virtual/2020/protected/session_oral_21097.html), [Reinforcement Learning](https://neurips.cc/virtual/2020/protected/session_oral_21091.html)), **Workshop** - [New In ML](https://neurips.cc/virtual/2020/protected/affinity_workshop_19448.html)
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+- **Day 3: Session 2 -** [Keynote](https://neurips.cc/virtual/2020/protected/invited_16168.html) + Tracks ([Clustering/Ranking](https://neurips.cc/virtual/2020/protected/session_oral_21077.html), [Dynamical Sys/Density/Sparsity](https://neurips.cc/virtual/2020/protected/session_oral_21080.html), [Vision Applications](https://neurips.cc/virtual/2020/protected/session_oral_21068.html), [Deep Learning](https://neurips.cc/virtual/2020/protected/session_oral_21071.html), [Reinforcement Learning](https://neurips.cc/virtual/2020/protected/session_oral_21070.html), [Social/Privacy](https://neurips.cc/virtual/2020/protected/session_oral_21076.html), [Learning Theory](https://neurips.cc/virtual/2020/protected/session_oral_21088.html)), **Session 3** - [Keynote](https://neurips.cc/virtual/2020/protected/invited_16163.html) + Tracks ([Vision Applications](https://neurips.cc/virtual/2020/protected/session_oral_21089.html), [Deep Learning/Theory](https://neurips.cc/virtual/2020/protected/session_oral_21093.html), [Reinforcement Learning](https://neurips.cc/virtual/2020/protected/session_oral_21090.html)), **COVID-19 [Symposium](https://neurips.cc/virtual/2020/protected/e_covid19.html)**
+
+- **Day 4: Session 4** - [Lecture](https://neurips.cc/virtual/2020/protected/invited_16165.html) + Tracks ([COVID/Applications/Composition](https://neurips.cc/virtual/2020/protected/session_oral_21075.html), [Continual/Meta/Misc Learning](https://neurips.cc/virtual/2020/protected/session_oral_21078.html), [Kernel Methods/Optimization](https://neurips.cc/virtual/2020/protected/session_oral_21081.html), [Deep Learning](https://neurips.cc/virtual/2020/protected/session_oral_21072.html), [Probabilistic/Causality](https://neurips.cc/virtual/2020/protected/session_oral_21086.html), [Social/Adversarial Learning](https://neurips.cc/virtual/2020/protected/session_oral_21087.html), [Optimization](https://neurips.cc/virtual/2020/protected/session_oral_21084.html)), **Session 5** - [Keynote](https://neurips.cc/virtual/2020/protected/invited_16164.html) + Tracks ([Vision Applications](https://neurips.cc/virtual/2020/protected/session_oral_21095.html), [Graph/Meta Learning/Software](https://neurips.cc/virtual/2020/protected/session_oral_21098.html), [Learning Theory](https://neurips.cc/virtual/2020/protected/session_oral_21101.html)), **Workshop** - [Women in ML](https://neurips.cc/virtual/2020/protected/affinity_workshop_19543.html)
+
+- **Day 5: Session 6** - Lecture + Tracks ([Probabilistic Models/Statistics](https://neurips.cc/virtual/2020/protected/session_oral_21079.html), [Graph/Relational/Theory](https://neurips.cc/virtual/2020/protected/session_oral_21082.html), [Unsupervised/Probabilistic](https://neurips.cc/virtual/2020/protected/session_oral_21074.html), [Deep Learning](https://neurips.cc/virtual/2020/protected/session_oral_21073.html), [Neuroscience](https://neurips.cc/virtual/2020/protected/session_oral_21083.html), [Optimization/Theory](https://neurips.cc/virtual/2020/protected/session_oral_21085.html), [Reinforcement Learning](https://neurips.cc/virtual/2020/protected/session_oral_21069.html)), **Session 7** - Keynote + Tracks ([Optimization](https://neurips.cc/virtual/2020/protected/session_oral_21100.html), [Health/AutoML/(Soft|Hard)ware](https://neurips.cc/virtual/2020/protected/session_oral_21096.html), [Deep Learning](https://neurips.cc/virtual/2020/protected/session_oral_21092.html), [Neuroscience/Probabilistic](https://neurips.cc/virtual/2020/protected/session_oral_21102.html))
+
+- **Day 6: [Workshops](https://neurips.cc/virtual/2020/protected/e_workshops.html), [Competitions](https://neurips.cc/virtual/2020/protected/e_competitions.html)**
+
+- **Day 7: [Workshops](https://neurips.cc/virtual/2020/protected/e_workshops.html), [Competitions](https://neurips.cc/virtual/2020/protected/e_competitions.html)**

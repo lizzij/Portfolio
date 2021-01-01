@@ -9,6 +9,7 @@ type ProjectType = {
   }
   content: string
   tags: string
+  index: number
 }
 
 export default ProjectType
