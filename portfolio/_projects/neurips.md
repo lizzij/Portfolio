@@ -1,10 +1,10 @@
 ---
 title: 'NeurIPS 2020'
 excerpt: 'Takeaways from 2020 Virtual-only Conference on Neural Information Processing Systems. I participated in expo, sessions, tutorials and workshops.'
-coverImage: '/assets/project/neurips/cover.jpg'
+coverImage: '/assets/project/neurips/cover.jpeg'
 date: '2020-12-12T05:35:07.322Z'
 ogImage:
-  url: '/assets/project/neurips/cover.jpg'
+  url: '/assets/project/neurips/cover.jpeg'
 tags: 'note ml'
 index: 3
 ---
