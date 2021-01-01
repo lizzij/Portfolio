@@ -22,7 +22,7 @@ const Index = ({ allProjects }: Props) => {
         </Head>
         <Container>
           <Intro />
-          <SkillGraph />
+          {/* <SkillGraph /> */}
           <Projects ready projects={allProjects} />
           <About />
           <Contact />
