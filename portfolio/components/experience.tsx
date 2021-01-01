@@ -6,8 +6,8 @@ const Experience = () => {
       <SectionHeader header="experience" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
         <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
-          <div className="md:text-xl md:pb-1">Software Engineer Coop at Harvard Catalyst</div>
-          <div className="text-gray-600 md:pb-1">2020.6 - 2020.12</div>
+          <div className="md:text-xl text-lg pb-1">Software Engineer Coop at Harvard Catalyst</div>
+          <div className="text-gray-600 pb-1">2020.6 - 2020.12</div>
           <div className="text-gray-500">
             I worked as a full-stack intern on the data network team. 
             I collaborated with a team of developers, product managers and testers
@@ -16,8 +16,8 @@ const Experience = () => {
           </div>
         </div>
         <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
-          <div className="md:text-xl md:pb-1">Software Engineer Coop at Broad Institute</div>
-          <div className="text-gray-600 md:pb-1">2019.6 - 2019.12</div>
+          <div className="md:text-xl text-lg pb-1">Software Engineer Coop at Broad Institute</div>
+          <div className="text-gray-600 pb-1">2019.6 - 2019.12</div>
           <div className="text-gray-500">
             I worked as a full-stack intern on the tooling team. 
             I developed a web-based analysis tool to search and annotate a particular type of 

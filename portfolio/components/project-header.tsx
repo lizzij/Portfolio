@@ -15,7 +15,7 @@ const ProjectHeader = ({ title, coverImage, date, tags}: Props) => {
     <>
       <ProjectTitle>{title}</ProjectTitle>
       <div className="flex justify-around mb-8 md:mb-16 sm:mx-0">
-        <CoverImage title={title} src={coverImage} height={620} width={1240} />
+        <CoverImage title={title} src={coverImage} height={900} width={900} />
       </div>
       <div className="max-w-2xl mx-auto">
         <div className="mb-6 text-lg">

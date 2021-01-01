@@ -22,7 +22,7 @@ const Index = ({ allProjects }: Props) => {
         </Head>
         <Container>
           <Intro />
-          <SkillGraph />
+          {/* <SkillGraph /> */}
           <Projects ready projects={allProjects} />
           <About />
           <Contact />
@@ -42,6 +42,7 @@ export const getStaticProps = async () => {
     'coverImage',
     'excerpt',
     'tags',
+    'index',
   ])
 
   return {

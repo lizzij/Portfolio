@@ -8,13 +8,13 @@ const Menu = () => {
         </button>
       </a>
       <div className="flex-grow"></div>
-        <a href="#work">
+        <a href="/#work">
           <button className="bg-transparent hover:bg-black text-black hover:text-white 
           font-bold md:text-2xl py-0 px-3 ml-3 border-2 border-black rounded-full focus:outline-none">
             work
           </button>
         </a>
-        <a href="#contact">
+        <a href="/#contact">
           <button className="bg-transparent hover:bg-black text-black hover:text-white 
             font-bold md:text-2xl py-0 px-3 ml-3 border-2 border-black rounded-full focus:outline-none">
             contact
