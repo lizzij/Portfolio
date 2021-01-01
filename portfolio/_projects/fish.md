@@ -5,7 +5,7 @@ coverImage: '/assets/project/fish/cover.png'
 date: '2020-09-01T05:35:07.322Z'
 ogImage:
   url: '/assets/project/fish/cover.png'
-tags: 'code web game'
+tags: 'code web'
 index: 1
 ---
 
