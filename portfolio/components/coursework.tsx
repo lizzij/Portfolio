@@ -3,7 +3,7 @@ import SectionHeader from '../components/section-header'
 const Coursework = () => {
   return (
     <div>
-      <SectionHeader header="coursework" />
+      <SectionHeader header="courseworks" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-16">
         <div className="grid grid-cols-1 divide-y divide-black">
           <div>Algorithms &amp; Data</div>

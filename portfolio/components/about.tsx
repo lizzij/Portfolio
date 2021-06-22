@@ -1,4 +1,4 @@
-import GradCountdown from './grad-countdown'
+import MyCountdown from './my-countdown'
 import Coursework from './coursework'
 import Experience from './experience'
 
@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div>
       <Experience />
-      <Coursework />      
-      <GradCountdown />
+      <Coursework />
+      <MyCountdown />
     </div>
   )
 }
