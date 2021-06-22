@@ -9,8 +9,8 @@ type Props = {
 
 const Projects = ({ ready = false, projects }: Props) => {
   return (
-    ready ? 
-    <div id="work">
+    ready ?
+    <div id="works">
       <SectionHeader header="projects" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
         {projects.map((project) => (
@@ -26,7 +26,7 @@ const Projects = ({ ready = false, projects }: Props) => {
       </div>
     </div>
     :
-    <div id="work">
+    <div id="works">
       <SectionHeader header="projects" />
       <div>Coming soon...</div>
     </div>

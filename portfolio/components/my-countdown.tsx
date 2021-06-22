@@ -15,36 +15,36 @@ const CompletedCountdown = () => <div>Hooray, I graduated 🎓!</div>
 const renderer = (countdown: countdown) => {
   const { days, hours, minutes, seconds, completed } = countdown
   return (
-    completed ? 
-    <CompletedCountdown /> : 
+    completed ?
+    <CompletedCountdown /> :
     <span className="flex flex-wrap place-content-between">
       <span>
-        <span className="text-2xl">{days}</span> 
-        &nbsp;Days 
+        <span className="text-2xl">{days}</span>
+        &nbsp;Days
       </span>
       <span>
-        <span className="text-2xl">{hours}</span> 
-        &nbsp;Hours 
+        <span className="text-2xl">{hours}</span>
+        &nbsp;Hours
       </span>
       <span>
-        <span className="text-2xl">{minutes}</span> 
-        &nbsp;Minutes 
+        <span className="text-2xl">{minutes}</span>
+        &nbsp;Minutes
       </span>
       <span>
-        <span className="text-2xl">{seconds}</span> 
-        &nbsp;Seconds 
+        <span className="text-2xl">{seconds}</span>
+        &nbsp;Seconds
       </span>
     </span>
   )
 }
 
-const GradCountdown = () => {
+const MyCountdown = () => {
   return (
     <div>
-      <SectionHeader header="graduating in" />
-      <Countdown date="2021-12-19T05:00:00" renderer={renderer}/>
+      <SectionHeader header="starts working in" />
+      <Countdown date="2021-07-12T09:00:00" renderer={renderer}/>
     </div>
   )
 }
 
-export default GradCountdown
+export default MyCountdown
