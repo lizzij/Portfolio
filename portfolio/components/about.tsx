@@ -1,4 +1,4 @@
-import MyCountdown from './my-countdown'
+// import MyCountdown from './my-countdown'
 import Coursework from './coursework'
 import Experience from './experience'
 
@@ -7,7 +7,7 @@ const About = () => {
     <div>
       <Experience />
       <Coursework />
-      <MyCountdown />
+      {/* <MyCountdown /> */}
     </div>
   )
 }

@@ -6,6 +6,23 @@ const Experience = () => {
       <SectionHeader header="experiences" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
         <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
+          <div className="md:text-xl text-lg pb-1">Software Engineer at Google</div>
+          <div className="text-gray-900 pb-1">2021.10 - current</div>
+          <div className="text-gray-800">
+            I am working as a software engineer in the Google Cloud Platform, Cloud AI and Industry Solutions team.
+          </div>
+        </div>
+        <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
+          <div className="md:text-xl text-lg pb-1">Software Engineer at AWS</div>
+          <div className="text-gray-900 pb-1">2021.6 - 2021.10</div>
+          <div className="text-gray-800">
+            I worked as a software engineer in AWS platform SageMaker team on autoML solutions.
+          </div>
+        </div>
+      </div>
+      <SectionHeader header="internships" />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
+        <div className="bg-gray-100 rounded-2xl md:rounded-3xl p-4">
           <div className="md:text-xl text-lg pb-1">Software Engineer Coop at Harvard Catalyst</div>
           <div className="text-gray-900 pb-1">2020.6 - 2020.12</div>
           <div className="text-gray-800">
