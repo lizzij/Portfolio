@@ -11,7 +11,7 @@ const Projects = ({ ready = false, projects }: Props) => {
   return (
     ready ?
     <div id="works">
-      <SectionHeader header="projects" />
+      <SectionHeader header="posts" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-16">
         {projects.map((project) => (
           <ProjectPreview
